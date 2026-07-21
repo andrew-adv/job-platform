@@ -84,7 +84,8 @@ job-platform/
 
 ### Phase 1 —  Foundation
 
-- [x] Responsive navigation
+- [x] Navigation layout
+- [ ] Mobile navigation
 - [ ] Hero section
 - [ ] Featured jobs
 - [ ] About section
@@ -93,7 +94,7 @@ job-platform/
 
 ### Phase 2 —  Interactivity
 
-- [ ] Mobile navigation
+- [ ] Mobile responsiveness
 - [ ] Form validation
 - [ ] Theme toggle
 - [ ] Interactive UI components

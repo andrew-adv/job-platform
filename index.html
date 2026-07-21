@@ -1,54 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>JobPlatform</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Makes the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Platform</title>
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    >
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    
+
+    <!-- ===============================
+         Header
+    ================================ -->
     <header>
+
+        <!-- Main navigation -->
         <nav>
+
+            <!-- Logo -->
             <a href="index.html" class="logo">
                 <i class="fa-solid fa-briefcase"></i>
                 <span>JobPlatform</span>
             </a>
 
-            
+
+            <!-- Main navigation links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Jobs</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Authentication links -->
+            <div class="auth-links">
+
+                <a href="#">Login</a>
+
+                <a href="#">Register</a>
+
+            </div>
+
+
+            <!-- Mobile menu button -->
+            <!-- Hidden on desktop -->
+            <button class="burger">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </nav>
+
+
+        <!-- ===============================
+             Mobile Navigation
+             Hidden by default
+        ================================ -->
+
+        <div class="mobile-menu">
+
             <ul>
-                <li>
-                    <a href="#">
-                        Home
-                    </a>
-                </li>
 
-                <li>
-                    <a href="#">
-                        Jobs
-                    </a>
-                </li>
+                <li><a href="#">Home</a></li>
 
-                <li>
-                    <a href="#">
-                        About
-                    </a>
-                </li>
+                <li><a href="#">Jobs</a></li>
+
+                <li><a href="#">About</a></li>
+
             </ul>
 
             <div class="auth-links">
-                <a href="#">LOGIN</a>
-                <a href="#">REGISTER</a>
-            </div>
-        
 
-            <button>
-                <i class="fa-solid fa-bars"></i>         
-            </button>
-        </nav>
+                <a href="#">Login</a>
+
+                <a href="#">Register</a>
+
+            </div>
+
+        </div>
+
     </header>
+
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
