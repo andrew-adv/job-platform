@@ -104,7 +104,106 @@
 
     </header>
 
+    <!-- =====================================
+     Main Content
+====================================== -->
+<main>
 
+    <!-- =====================================
+         Hero Section
+    ====================================== -->
+    <!-- 
+        Hero
+        │
+        ├── Container
+        │
+        │   ├── Badge (optional)
+        │   │
+        │   ├── Heading
+        │   │
+        │   ├── Paragraph
+        │   │
+        │   ├── Search Card
+        │   │      ├── Job input
+        │   │      ├── Location input
+        │   │      └── Search button
+        │   │
+        │   └── Stats
+        │
+        └── Background decoration
+     -->
+    <section class="hero">
+
+        <!-- Limits the width of the hero content -->
+        <div class="container">
+
+            <!-- Main heading -->
+            <h1>
+                Find Your Next
+                <span>Opportunity</span>
+            </h1>
+
+            <!-- Supporting text -->
+            <p>
+                Search thousands of job openings from top companies.
+            </p>
+
+
+            <!-- =====================================
+                 Search Form
+            ====================================== -->
+
+            <!--
+                NOTE:
+                This should eventually become a <form>.
+                Using a form makes the search accessible and
+                allows the Enter key to submit automatically.
+            -->
+
+            <form class="search-bar">
+
+                <!-- Job Title -->
+                <div class="input-group border-right">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Job title or keyword"
+                    >
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="input-group">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Location or Remote"
+                    >
+
+                </div>
+
+
+                <!-- Search Button -->
+                <button class="search-btn" type="submit">
+
+                    Search Jobs
+
+                </button>
+
+            </form>
+
+
+            <!-- Hero statistics (coming later) -->
+        </div>
+
+    </section>
+
+</main>
     <script src="./js/index.js"></script>
 </body>
 </html>

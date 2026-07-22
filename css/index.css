@@ -64,8 +64,12 @@ nav{
 
     text-decoration:none;
 
-    color:#000;
+    color:#2031c8;
 
+}
+
+.logo span {
+    color: #000;
 }
 
 
@@ -221,4 +225,210 @@ nav a, .mobile-menu a{
 
     }
 
+}
+
+
+
+
+
+/* =====================================
+   Hero Section
+===================================== */
+
+.hero{
+
+    padding-block:5rem;
+
+}
+
+
+/* =====================================
+   Hero Content
+===================================== */
+
+.hero .container{
+
+    text-align:center;
+
+    width:min(1200px,90%);
+
+    margin-inline:auto;
+}
+
+
+/* Heading */
+
+.hero h1{
+
+    font-size:3rem;
+
+    font-weight:900;
+
+    margin-bottom:2rem;
+
+}
+
+.hero h1 span{
+
+    color:#2031c8;
+
+}
+
+
+/* Description */
+
+.hero p{
+
+    margin-bottom:2rem;
+
+    color:#666;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    font-weight:300;
+
+}
+
+
+/* =====================================
+   Search Bar
+===================================== */
+
+.search-bar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    max-width:900px;
+
+    width:100%;
+
+    margin:auto;
+
+    padding:.5rem .7rem;
+
+    border-radius:2rem;
+
+    background:#fafafa;
+
+    box-shadow:
+        0 0 10px #2423230a,
+        0 1rem 1rem #2423231f;
+
+}
+
+
+/* Individual Input Groups */
+
+.input-group{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.8rem;
+
+    width:100%;
+
+    padding:.4rem;
+
+}
+
+
+/* Input */
+
+.input-group input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font-size:.9rem;
+
+    padding:.5rem .1rem;
+
+}
+
+
+/* Divider */
+
+.border-right{
+
+    border-right:.05rem solid #b6b6b64f;
+
+}
+
+
+/* Search Button */
+
+.search-btn{
+
+    min-width:max-content;
+
+    padding:.5rem .8rem;
+
+    border:none;
+
+    border-radius:.5rem;
+
+    background:#2031c8;
+
+    color:#fff;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+}
+
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media (width <= 750px){
+
+    .hero{
+
+        padding:3rem .5rem;
+
+    }
+
+    .search-bar{
+
+        flex-direction:column;
+
+        padding-inline:.3rem;
+
+        border-radius:1rem;
+
+    }
+
+    .search-btn{
+
+        width:100%;
+
+    }
+
+    .border-right{
+
+        border-right:none;
+
+        border-bottom:.05rem solid #b6b6b64f;
+
+    }
+
+}
+
+@media (width > 1970px) {
+    html{
+        font-size: 33px;
+    }
 }
