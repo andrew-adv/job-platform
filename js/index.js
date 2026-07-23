@@ -40,3 +40,50 @@ window.addEventListener("resize", () => {
     }
 
 });
+
+
+
+const job = {
+    
+    jobtitle: "",
+
+    company: "",
+
+    companyLogo: "",
+
+    location: "",
+
+    employmentType: "",
+
+    salary: "",
+
+    skills: [],
+
+    postedDate: "",
+
+    applicationLink: "",
+    
+
+}
+
+
+const jobs = [
+  {
+        jobTitle: "",
+        company: "",
+        location: "",
+    },
+
+    {
+        jobTitle: "",
+        company: "",
+        location: "",
+    },
+
+    {
+        jobTitle: "",
+        company: "",
+        location: "",
+    },
+
+]
