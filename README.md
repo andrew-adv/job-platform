@@ -12,31 +12,54 @@ Job Platform is a frontend-first project focused on building a clean, responsive
 
 The application begins as a static website and will progressively evolve into a fully interactive platform with authentication, dashboards, job management, and backend integration.
 
+The project focuses on responsive layouts, reusable components, and progressively enhanced JavaScript functionality before introducing backend technologies.
+
+This project serves as a foundation for future features such as authentication, job applications, saved jobs, search, filtering, and user dashboards.
+
+---
+
 ---
 
 ## Features
 
-### Current
+### Current Features
 
 - Responsive navigation
-- Semantic HTML structure
-- Mobile navigation layout
-- Clean project architecture
+- Mobile navigation menu
+- Hero section with job search UI
+- Dynamic Featured Jobs section
+- Previous / Next job pagination
+- Responsive job cards
+- Newsletter subscription form
+- Client-side newsletter validation
+- Under Construction page for unfinished routes
+- Responsive CTA section
+- Responsive footer
 
-<!-- ### Planned
+### In Progress
 
-- Hero section
-- Featured jobs
-- Company showcase
-- Search interface
-- Authentication pages
-- User dashboard
+- Jobs Listing page
+- Job Details page
+- Application form
+- Success page
+
+
+### Planned
+
+- Login & Registration
+- Local Storage authentication
+- Saved Jobs
+- Search & Filters
+- Company Profiles
+- User Dashboard
+- Accessibility enhancements
 - Job listings
-- Application tracking
 - Responsive mobile navigation
+- Application tracking
+- Responsive improvements
 - Dark mode 
 
---- -->
+---
 
 ## Tech Stack
 
@@ -67,14 +90,19 @@ Coming soon.
 job-platform/
 │
 ├── assets/
+│   ├── images/
+│   └── logos/
 │
 ├── css/
-│   └── index.css
+│   ├── index.css
+│   └── construction.css
 │
 ├── js/
+│   ├── index.js
+│   └── jobs.js
 │
 ├── index.html
-│
+├── construction.html
 └── README.md
 ```
 
@@ -85,17 +113,17 @@ job-platform/
 ### Phase 1 —  Foundation
 
 - [x] Navigation layout
-- [ ] Mobile navigation
-- [ ] Hero section
-- [ ] Featured jobs
+- [x] Mobile navigation
+- [x] Hero section
+- [x] Featured jobs
 - [ ] About section
-- [ ] Footer
-- [ ] Responsive layout
+- [x] Footer
+- [x] Responsive layout
 
 ### Phase 2 —  Interactivity
 
-- [ ] Mobile responsiveness
-- [ ] Form validation
+- [x] Mobile responsiveness
+- [x] Form validation
 - [ ] Theme toggle
 - [ ] Interactive UI components
 

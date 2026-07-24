@@ -34,9 +34,16 @@ body{
    Header
 ===================================== */
 
-header{
+.main-header{
+    background:#f6f6f8;
 
-    background:#ddd;
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+
+    box-shadow:
+        0 1px 1px #24232309;
 
 }
 
@@ -108,6 +115,10 @@ nav a, .mobile-menu a{
 
     text-decoration:none;
 
+}
+
+ul a:nth-child(2) {
+    color: #2031c8;
 }
 
 
@@ -246,7 +257,7 @@ nav a, .mobile-menu a{
    Hero Content
 ===================================== */
 
-.hero .container{
+ .container{
 
     text-align:center;
 
@@ -683,3 +694,683 @@ nav a, .mobile-menu a{
 }
 }
 
+
+
+
+/* =====================================
+   CTA Section
+===================================== */
+
+.cta {
+
+    /* padding: 5rem 1rem; */
+    padding: 3rem 2rem;
+
+}
+
+
+/* =====================================
+   CTA Card
+===================================== */
+
+.cta-card {
+
+    background: #0f172a;
+
+    border-radius: 2rem;
+
+    padding: 3rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 3rem;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow:
+        0 0 1px #2423230a,
+        0 .8rem 2rem #24232325;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+/* Decorative Gradient */
+
+.cta-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(32,49,200,.35),
+            transparent
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =====================================
+   CTA Content
+===================================== */
+
+.cta-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    flex: 1;
+
+}
+
+
+.cta-content h2 {
+
+    color: white;
+
+    font-size: 2rem;
+
+    line-height: 1.2;
+
+    margin-bottom: 1rem;
+
+}
+
+
+.cta-content p {
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+
+    margin-bottom: 2rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* =====================================
+   CTA Buttons
+===================================== */
+
+.cta-buttons {
+
+    display: flex;
+    
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    
+    
+    padding: .9rem 1.5rem;
+
+    border-radius: .8rem;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color .2s,
+        transform .2s,
+        opacity .2s;
+
+}
+
+
+.primary-btn {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: .5rem;
+
+    background: #2031c8;
+
+    color: white;
+
+    border: none;
+
+}
+
+
+.primary-btn:hover {
+
+    opacity: .9;
+
+    transform: translateY(-2px);
+
+}
+
+
+.secondary-btn {
+
+    background: rgba(255,255,255,.08);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.15);
+
+}
+
+
+.secondary-btn:hover {
+
+    background: rgba(255,255,255,.18);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =====================================
+   Statistics
+===================================== */
+
+.cta-stats {
+
+    position: relative;
+
+    z-index: 1;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 1rem;
+
+    flex: .8;
+
+}
+
+
+/* Individual Card */
+
+.stat-card {
+
+    aspect-ratio: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 1rem;
+
+}
+
+
+.stat-number {
+
+    color: white;
+
+    font-size: 1.7rem;
+
+    font-weight: 900;
+
+    margin-bottom: .3rem;
+
+}
+
+
+.stat-title {
+
+    color: #94a3b8;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08rem;
+
+    font-size: .65rem;
+
+}
+
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media (width <= 850px){
+
+    .cta-card{
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .cta-buttons{
+
+        justify-content: center;
+
+    }
+
+}
+
+
+
+/* =====================================
+   Footer
+===================================== */
+
+.footer {
+
+    padding: 5rem 1rem 2rem;
+
+    background: #f8fafc;
+
+    border-top: 1px solid #e5e7eb;
+
+}
+
+
+/* =====================================
+   Footer Grid
+===================================== */
+
+.footer-content {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1.5fr;
+
+    gap: 3rem;
+
+    margin-bottom: 3rem;
+
+}
+
+
+/* =====================================
+   Brand
+===================================== */
+
+.footer-brand p {
+
+    margin: 1.5rem 0;
+
+    color: #64748b;
+
+    line-height: 1.7;
+
+    font-size: .9rem;
+
+}
+
+
+/* =====================================
+   Social Links
+===================================== */
+
+.social-links {
+
+    display: flex;
+
+    gap: .75rem;
+
+}
+
+.social-links a {
+
+    width: 2.5rem;
+
+    height: 2.5rem;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: #64748b;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 50%;
+
+    transition:
+        background-color .2s,
+        color .2s,
+        border-color .2s,
+        transform .2s;
+
+}
+
+.social-links a:hover {
+
+    color: white;
+
+    background: #2031c8;
+
+    border-color: #2031c8;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =====================================
+   Footer Links
+===================================== */
+
+.footer-links h4,
+.footer-newsletter h4 {
+
+    margin-bottom: 1.5rem;
+
+    font-size: 1rem;
+
+}
+
+.footer-links ul {
+
+    list-style: none;
+
+}
+
+.footer-links li {
+
+    margin-bottom: 1rem;
+
+}
+
+.footer-links a {
+
+    text-decoration: none;
+
+    color: #64748b;
+
+    transition: color .2s;
+
+}
+
+.footer-links a:hover {
+
+    color: #2031c8;
+
+}
+
+
+/* =====================================
+   Newsletter
+===================================== */
+
+.footer-newsletter p {
+
+    color: #64748b;
+
+    margin-bottom: 1rem;
+
+    line-height: 1.6;
+
+    font-size: .9rem;
+
+}
+
+
+/* =====================================
+   Newsletter Form
+===================================== */
+
+.newsletter-form {
+
+    position: relative;
+
+    display: flex;
+
+    gap: .75rem;
+
+    flex-wrap: wrap;
+
+}
+
+.newsletter-form input {
+
+    flex: 1 1 220px;
+
+    padding: .8rem 1rem;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: .6rem;
+
+    outline: none;
+
+    font-size: .9rem;
+
+}
+
+.newsletter-form input:focus {
+
+    border-color: #2031c8;
+
+}
+
+.newsletter-form button {
+
+    padding: .8rem 1.4rem;
+
+    border: none;
+
+    border-radius: .6rem;
+
+    background: #2031c8;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        opacity .2s,
+        transform .2s;
+
+}
+
+.newsletter-form button:hover {
+
+    opacity: .9;
+
+    transform: translateY(-2px);
+
+}
+
+/* =====================================
+   Newsletter Message
+===================================== */
+
+
+.newsletter-message {
+
+    position: absolute;
+
+    margin-top: .8rem;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    min-height: 1.2rem;
+
+    transition: all .9s ease;
+
+}
+
+
+/* Error State */
+
+.newsletter-message.error {
+
+    color: #dc2626;
+
+}
+
+
+/* Success State */
+
+.newsletter-message.success {
+
+    color: rgba(6,104,6,.85);
+
+}
+
+
+/* =====================================
+   Footer Bottom
+===================================== */
+
+.footer-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    padding-top: 2rem;
+
+    border-top: 1px solid #e5e7eb;
+
+    color: #64748b;
+
+    font-size: .85rem;
+
+}
+
+.footer-bottom-links {
+
+    display: flex;
+
+    gap: 2rem;
+
+}
+
+.footer-bottom-links a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: color .2s;
+
+}
+
+.footer-bottom-links a:hover {
+
+    color: #2031c8;
+
+}
+
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media (width <= 950px) {
+
+    .footer-content {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+}
+
+@media (width <= 700px) {
+
+    .footer-content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .footer-bottom-links {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+    }
+
+    /* Newsletter stacks nicely */
+
+    .newsletter-form {
+
+        flex-direction: column;
+
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+
+        width: 100%;
+        height: 20%;
+    }
+
+}
