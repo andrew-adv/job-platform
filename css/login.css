@@ -1,0 +1,278 @@
+/*
+==================================================
+Login / Register Page
+==================================================
+*/
+
+.auth-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:4rem 1.5rem;
+
+    background:#f8fafc;
+}
+
+
+/*
+==================================================
+Card
+==================================================
+*/
+
+.auth-card{
+
+    width:100%;
+    max-width:500px;
+
+    background:#fff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:1rem;
+
+    padding:2.5rem;
+
+    box-shadow:
+        0 10px 30px rgba(15,23,42,.08);
+}
+
+
+/*
+==================================================
+Logo
+==================================================
+*/
+
+.auth-logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:2rem;
+}
+
+.auth-logo i{
+
+    font-size:2.5rem;
+
+    color:#1152d4;
+
+    margin-bottom:.75rem;
+}
+
+.auth-logo h2{
+
+    font-size:1.7rem;
+
+    font-weight:700;
+}
+
+
+/*
+==================================================
+Forms
+==================================================
+*/
+
+.login-form,
+.register-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.25rem;
+}
+
+
+/*
+Hidden by default.
+
+JavaScript will remove this class later.
+*/
+
+.hidden{
+
+    display:none;
+}
+
+
+/*
+==================================================
+Typography
+==================================================
+*/
+
+.login-form h1,
+.register-form h1{
+
+    font-size:2rem;
+
+    margin:0;
+}
+
+.login-form p,
+.register-form p{
+
+    color:#64748b;
+
+    line-height:1.6;
+}
+
+
+/*
+==================================================
+Inputs
+==================================================
+*/
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.5rem;
+}
+
+.input-group label{
+
+    font-weight:600;
+
+    color:#1e293b;
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:.9rem 1rem;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:.6rem;
+
+    font-size:.95rem;
+
+    transition:.25s;
+}
+
+.input-group input:focus{
+
+    outline:none;
+
+    border-color:#1152d4;
+
+    box-shadow:
+        0 0 0 3px rgba(17,82,212,.12);
+}
+
+
+/*
+==================================================
+Buttons
+==================================================
+*/
+
+.login-form button[type="submit"],
+.register-form button[type="submit"]{
+
+    width:100%;
+
+    padding:1rem;
+
+    border:none;
+
+    border-radius:.6rem;
+
+    background:#1152d4;
+
+    color:#fff;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.login-form button[type="submit"]:hover,
+.register-form button[type="submit"]:hover{
+
+    background:#0d46bb;
+}
+
+
+/*
+==================================================
+Switch Form Links
+==================================================
+*/
+
+.switch-form{
+
+    text-align:center;
+
+    font-size:.95rem;
+
+    color:#64748b;
+}
+
+.switch-form button{
+
+    background:none;
+
+    border:none;
+
+    color:#1152d4;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    padding:0;
+}
+
+.switch-form button:hover{
+
+    text-decoration:underline;
+}
+
+
+/*
+==================================================
+Responsive
+==================================================
+*/
+
+@media (width <= 600px){
+
+.auth-page{
+
+    padding:2rem 1rem;
+}
+
+.auth-card{
+
+    padding:2rem 1.5rem;
+}
+
+.login-form h1,
+.register-form h1{
+
+    font-size:1.7rem;
+}
+
+}

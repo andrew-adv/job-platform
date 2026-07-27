@@ -1,0 +1,366 @@
+/* =====================================
+   Apply Page
+===================================== */
+
+.application-page{
+
+    width:min(1000px,90%);
+
+    margin:3rem auto 5rem;
+
+}
+
+
+/* =====================================
+   Breadcrumb
+===================================== */
+
+.breadcrumb{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:.5rem;
+
+    margin-bottom:2rem;
+
+    font-size:.9rem;
+
+}
+
+.breadcrumb a{
+
+    text-decoration:none;
+
+    color:#64748b;
+
+}
+
+.breadcrumb a:hover{
+
+    color:#1152d4;
+
+}
+
+
+/* =====================================
+   Application Card
+===================================== */
+
+.application-card{
+
+    background:#fff;
+
+    padding:2rem;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:1rem;
+
+    box-shadow:0 .3rem 1rem rgba(0,0,0,.05);
+
+}
+
+
+/* =====================================
+   Header
+===================================== */
+
+.application-header{
+
+    margin-bottom:2rem;
+
+}
+
+.application-header h1{
+
+    font-size:2rem;
+
+    margin-bottom:.5rem;
+
+}
+
+.application-header p{
+
+    color:#64748b;
+
+}
+
+
+/* =====================================
+   Form
+===================================== */
+
+.application-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+}
+
+
+/* =====================================
+   Two-column Layout
+===================================== */
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:1.5rem;
+
+}
+
+
+/* =====================================
+   Input Group
+===================================== */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.5rem;
+
+}
+
+.input-group label{
+
+    font-weight:600;
+
+}
+
+.input-group input,
+
+.input-group textarea{
+
+    width:100%;
+
+    padding:.9rem 1rem;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:.6rem;
+
+    outline:none;
+
+    font-size:.95rem;
+
+    font-family:inherit;
+
+    transition:border-color .25s;
+
+}
+
+.input-group input:focus,
+
+.input-group textarea:focus{
+
+    border-color:#1152d4;
+
+}
+
+
+/* Prevent textarea resize sideways */
+
+.input-group textarea{
+
+    resize:vertical;
+
+}
+
+
+/* =====================================
+   Upload Area
+===================================== */
+
+.upload-box{
+
+    border:2px dashed #cbd5e1;
+
+    border-radius:.8rem;
+
+    padding:2.5rem;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.upload-box:hover{
+
+    border-color:#1152d4;
+
+    background:#f8fbff;
+
+}
+
+.upload-box i{
+
+    font-size:2rem;
+
+    color:#1152d4;
+
+    margin-bottom:1rem;
+
+}
+
+.upload-box h4{
+
+    margin-bottom:.5rem;
+
+}
+
+.upload-box p{
+
+    color:#64748b;
+
+}
+
+
+/* =====================================
+   Checkbox
+===================================== */
+
+.checkbox-group{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:.7rem;
+
+    font-size:.95rem;
+
+}
+
+.checkbox-group input{
+
+    margin-top:.2rem;
+
+}
+
+.checkbox-group a{
+
+    color:#1152d4;
+
+    text-decoration:none;
+
+}
+
+
+/* =====================================
+   Buttons
+===================================== */
+
+.form-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:1rem;
+
+    margin-top:1rem;
+
+}
+
+
+/* Secondary Button */
+
+.secondary-btn{
+
+    padding:.9rem 1.5rem;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:.6rem;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#f1f5f9;
+
+}
+
+
+/* Primary Button */
+
+.primary-btn{
+
+    padding:.9rem 1.5rem;
+
+    border:none;
+
+    border-radius:.6rem;
+
+    background:#1152d4;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.primary-btn:hover{
+
+    opacity:.9;
+
+}
+
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(width <= 768px){
+
+    .application-card{
+
+        padding:1.5rem;
+
+    }
+
+    .form-row{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-actions{
+
+        flex-direction:column;
+
+    }
+
+    .primary-btn,
+
+    .secondary-btn{
+
+        width:100%;
+
+    }
+
+}

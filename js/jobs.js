@@ -25,7 +25,7 @@ const jobs = [
         salary: "$140k - $180k",
         skills: ["Figma", "UX Research", "Design Systems"],
         postedDate: "1d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./jobdetails.html"
     },
 
     {
@@ -37,7 +37,7 @@ const jobs = [
         salary: "$100k - $130k",
         skills: ["React", "TypeScript", "Tailwind CSS"],
         postedDate: "3d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -49,7 +49,7 @@ const jobs = [
         salary: "$150k - $190k",
         skills: ["Node.js", "PostgreSQL", "AWS"],
         postedDate: "5h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -61,7 +61,7 @@ const jobs = [
         salary: "$95k - $120k",
         skills: ["SQL", "Python", "Tableau"],
         postedDate: "2d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -73,7 +73,7 @@ const jobs = [
         salary: "$70/hr",
         skills: ["Flutter", "Dart", "Firebase"],
         postedDate: "4d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -85,7 +85,7 @@ const jobs = [
         salary: "$160k - $210k",
         skills: ["Docker", "Kubernetes", "Terraform"],
         postedDate: "6h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -97,7 +97,7 @@ const jobs = [
         salary: "$180k - $250k",
         skills: ["Python", "PyTorch", "LLMs"],
         postedDate: "1w ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -109,7 +109,7 @@ const jobs = [
         salary: "$115k - $145k",
         skills: ["SIEM", "Network Security", "Incident Response"],
         postedDate: "2d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -121,7 +121,7 @@ const jobs = [
         salary: "$145k - $185k",
         skills: ["Agile", "Roadmapping", "Analytics"],
         postedDate: "12h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -133,7 +133,7 @@ const jobs = [
         salary: "$80k - $100k",
         skills: ["Adobe XD", "Figma", "Prototyping"],
         postedDate: "3d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -145,7 +145,7 @@ const jobs = [
         salary: "$170k - $220k",
         skills: ["AWS", "CloudFormation", "Microservices"],
         postedDate: "8h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -157,7 +157,7 @@ const jobs = [
         salary: "$150k - $195k",
         skills: ["React", "Node.js", "GraphQL"],
         postedDate: "1d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -169,7 +169,7 @@ const jobs = [
         salary: "$105k - $135k",
         skills: ["Selenium", "Java", "Cypress"],
         postedDate: "2d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -181,7 +181,7 @@ const jobs = [
         salary: "$155k - $200k",
         skills: ["Swift", "SwiftUI", "Xcode"],
         postedDate: "10h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -193,7 +193,7 @@ const jobs = [
         salary: "$95k - $135k",
         skills: ["Kotlin", "Jetpack Compose", "Firebase"],
         postedDate: "3d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -205,7 +205,7 @@ const jobs = [
         salary: "$135k - $170k",
         skills: ["Python", "Machine Learning", "Pandas"],
         postedDate: "5d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -217,7 +217,7 @@ const jobs = [
         salary: "$165k - $205k",
         skills: ["Kubernetes", "Go", "Prometheus"],
         postedDate: "6h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -229,7 +229,7 @@ const jobs = [
         salary: "$165k - $215k",
         skills: ["Solidity", "Ethereum", "Web3.js"],
         postedDate: "2d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -241,7 +241,7 @@ const jobs = [
         salary: "$85k - $110k",
         skills: ["Documentation", "Markdown", "API Docs"],
         postedDate: "4d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -253,7 +253,7 @@ const jobs = [
         salary: "$120k - $165k",
         skills: ["C++", "Unreal Engine", "Gameplay Systems"],
         postedDate: "9h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -265,7 +265,7 @@ const jobs = [
         salary: "$190k - $250k",
         skills: ["CUDA", "PyTorch", "Deep Learning"],
         postedDate: "18h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -277,7 +277,7 @@ const jobs = [
         salary: "$110k - $145k",
         skills: ["Power BI", "SQL", "ETL"],
         postedDate: "2d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -289,7 +289,7 @@ const jobs = [
         salary: "$40/hr",
         skills: ["JavaScript", "Git", "React"],
         postedDate: "1d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -301,7 +301,7 @@ const jobs = [
         salary: "$125k - $160k",
         skills: ["CRM", "Apex", "REST APIs"],
         postedDate: "3h ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     },
 
     {
@@ -313,7 +313,7 @@ const jobs = [
         salary: "$90k - $120k",
         skills: ["Linux", "Active Directory", "VMware"],
         postedDate: "5d ago",
-        applicationLink: "./viewjob.html"
+        applicationLink: "./joblisting.html"
     }
 ];
 
@@ -469,7 +469,7 @@ const nextBtn = document.querySelector(".next-btn");
 
 let diff = currentIndex - jobsPerPage 
 
-nextBtn.addEventListener("click", () => {
+nextBtn?.addEventListener("click", () => {
     currentIndex += jobsPerPage;
    
 
@@ -485,7 +485,7 @@ nextBtn.addEventListener("click", () => {
 })
 
 
-prevBtn.addEventListener("click", () => {
+prevBtn?.addEventListener("click", () => {
 
     currentIndex -= jobsPerPage;
 

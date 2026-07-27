@@ -1,45 +1,110 @@
-// ===============================
-// Grab the elements we need
-// ===============================
+    // let isLoggedIn = false;
+    // let file;
 
-// The button the user clicks (☰)
-const burger = document.querySelector(".burger");
+    
 
-// The menu that will open and close
-const mobileMenu = document.querySelector(".mobile-menu");
+    // const logIn = document.querySelector("#logIn");
+    // console.log(logIn)
+    // logIn?.addEventListener("click", (e) => {
+    //     e.preventDefault()
+    //     isLoggedIn = true
+    //     console.log(isLoggedIn)
+    // });
 
 
-// ===============================
-// Click Event
-// ===============================
+    // if (isLoggedIn) {
+    //     file = "./headers/header.loggedin.html"
+    // } else {
+    //     file = "./headers/header.html"
+    // }
+    
+    // fetch(file)
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         document.querySelector("#header").innerHTML = data;
+    //         });
 
-// This listener is added ONLY ONCE when the page loads.
-// It now waits forever until the user clicks the button.
-burger.addEventListener("click", () => {
 
+
+
+
+// // The button the user clicks (☰)
+// const burger = document.querySelector(".burger");
+
+// // The menu that will open and close
+// const mobileMenu = document.querySelector(".mobile-menu");
+
+
+// // ===============================
+// // Click Event
+// // ===============================
+
+// // This listener is added ONLY ONCE when the page loads.
+// // It now waits forever until the user clicks the button.
+// burger.addEventListener("click", () => {
+
+//     // If "open" exists -> remove it.
+//     // If it doesn't exist -> add it.
+//     mobileMenu.classList.toggle("open");
+
+//     burger.classList.toggle("open")
+
+// });
+
+
+// // ===============================
+// // Resize Event
+// // ===============================
+
+// // This runs EVERY TIME the window changes size.
+// window.addEventListener("resize", () => {
+
+//     // If we're back on desktop...
+//     if (window.innerWidth > 750) {
+
+//         // ...make sure the mobile menu is closed.
+//         mobileMenu.classList.remove("open");
+
+//         burger.classList.remove("open")
+
+//     }
+
+// });
+
+ function mobileToggle(burgerClassName, mobileMenuClassName, stateName) {
+
+    const burger = document.querySelector(`.${burgerClassName}`);
+
+    const mobileMenu = document.querySelector(`.${mobileMenuClassName}`);
+
+    burger.addEventListener("click", () => {
     // If "open" exists -> remove it.
     // If it doesn't exist -> add it.
-    mobileMenu.classList.toggle("open");
+    mobileMenu.classList.toggle(`${stateName}`);
 
-});
+    burger.classList.toggle(`${stateName}`)
+
+    });
 
 
-// ===============================
-// Resize Event
-// ===============================
+    window.addEventListener("resize", () => {
 
-// This runs EVERY TIME the window changes size.
-window.addEventListener("resize", () => {
+        // If we're back on desktop...
+        if (window.innerWidth > 750) {
 
-    // If we're back on desktop...
-    if (window.innerWidth > 750) {
+            // ...make sure the mobile menu is closed.
+            mobileMenu.classList.remove(`${stateName}`);
 
-        // ...make sure the mobile menu is closed.
-        mobileMenu.classList.remove("open");
+            burger.classList.remove(`${stateName}`)
 
-    }
+        }
 
-});
+    });
+}
+
+export{mobileToggle}
+
+mobileToggle("burger", "mobile-menu", "open" )
 
 
 const myForm = document.querySelector("form.newsletter-form");
@@ -47,7 +112,7 @@ const myForm = document.querySelector("form.newsletter-form");
 const myFormInput = document.querySelector("#email");
 const displayMessage = document.querySelector(".newsletter-message");
 
-myForm.addEventListener("submit", validateNewsletter);
+myForm?.addEventListener("submit", validateNewsletter);
 
 // Clears the message after 6 seconds
 function clearMessage() {
@@ -109,3 +174,7 @@ comingSoonLinks.forEach(e => {
     window.location.href = "construction.html"
     })
 });
+
+
+
+

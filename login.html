@@ -1,32 +1,56 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <!-- Character encoding -->
+
+    <!-- =====================================
+         Meta
+    ====================================== -->
+
     <meta charset="UTF-8">
 
-    <!-- Makes the website responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Job Platform</title>
+    <title>Login | JobPlatform</title>
 
-    <!-- Icons -->
+    <!-- =====================================
+         Icons
+    ====================================== -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
     >
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- =====================================
+         Styles
+    ====================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./css/index.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/login.css"
+    >
+
 </head>
 
 <body>
 
-    <!-- ===============================
-         Header
-    ================================ -->
-    <header class="main-header">
+<!-- =====================================
+     Header
+
+     Reuse Home Header
+====================================== -->
+
+<header class="main-header">
     
         <!-- Main navigation -->
         <nav>
@@ -107,237 +131,228 @@
 
     </header>
 
-    <!-- =====================================
-     Main Content
+
+<!-- =====================================
+     Login Section
 ====================================== -->
-<main>
 
-    <!-- =====================================
-         Hero Section
-    ====================================== -->
-    <!-- 
-        Hero
-        │
-        ├── Container
-        │
-        │   ├── Badge (optional)
-        │   │
-        │   ├── Heading
-        │   │
-        │   ├── Paragraph
-        │   │
-        │   ├── Search Card
-        │   │      ├── Job input
-        │   │      ├── Location input
-        │   │      └── Search button
-        │   │
-        │   └── Stats
-        │
-        └── Background decoration
-     -->
-    <section class="hero">
+<main class="auth-page">
 
-        <!-- Limits the width of the hero content -->
-        <div class="container">
+    <section class="auth-card">
 
-            <!-- Main heading -->
-            <h1>
-                Find Your Next
-                <span>Opportunity</span>
-            </h1>
+        <!-- Logo -->
 
-            <!-- Supporting text -->
-            <p>
-                Search thousands of job openings from top companies.
-            </p>
+        <div class="auth-logo">
 
+            <i class="fa-solid fa-briefcase"></i>
 
-            <!-- =====================================
-                 Search Form
-            ====================================== -->
+            <h2>JobPlatform</h2>
 
-            <form class="search-bar">
-
-                <!-- Job Title -->
-                <div class="input-group border-right">
-
-                    <i class="fa-solid fa-magnifying-glass"></i>
-
-                    <input
-                        type="text"
-                        placeholder="Job title or keyword"
-                    >
-
-                </div>
-
-
-                <!-- Location -->
-                <div class="input-group">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <input
-                        type="text"
-                        placeholder="Location or Remote"
-                    >
-
-                </div>
-
-
-                <!-- Search Button -->
-                <button class="search-btn" type="submit">
-
-                    Search Jobs
-
-                </button>
-
-            </form>
-
-
-            <!-- Hero statistics (coming later) -->
         </div>
 
-    </section>
 
+        <!-- ==============================
+             Login Form
 
-    <!-- =====================================
-     Featured Jobs
-===================================== -->
+             Visible by default.
+        =============================== -->
 
-<section class="featured-jobs">
+        <form class="login-form ">
 
-    <header class="section-header">
+            <h1>
 
-        <h2>Featured Jobs</h2>
+                Welcome Back
 
-        <div class="featured-controls">
+            </h1>
 
-        <button class="prev-btn">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
+            <p>
 
-        <button class="next-btn">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
+                Login to continue your job search.
 
-    </div>
-    </header>
+            </p>
 
-    <div class="jobs-container"></div>
+            <div class="input-group">
 
-    
-</section>
+                <label for="login-email">
 
-    <!-- =====================================
-        Call To Action Section
-    ====================================== -->
+                    Email
 
-    <section class="cta">
+                </label>
 
-        <!-- Keeps content aligned with the rest of the website -->
-        <div class="container">
-
-            <!-- CTA Card -->
-            <div class="cta-card">
-
-                <!-- ==========================
-                    CTA Content
-                =========================== -->
-
-                <div class="cta-content">
-
-                    <h2>
-                        Are you hiring the best talent?
-                    </h2>
-
-                    <p>
-                        Join over 10,000+ companies worldwide and post your job openings on the #1 professional platform.
-                    </p>
-
-                    <!-- CTA Buttons -->
-                    <div class="cta-buttons">
-
-                        <button class="primary-btn coming-soon">
-
-                            Post a Job Now
-                            <span class="material-symbols-outlined">launch</span>
-                        </button>
-
-                        <button class="secondary-btn coming-soon">
-
-                            Learn More
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-                <!-- ==========================
-                    Statistics
-                =========================== -->
-
-                <div class="cta-stats">
-
-                    <!-- Stat Card -->
-                    <article class="stat-card">
-
-                        <span class="stat-number">10M+</span>
-
-                        <span class="stat-title">
-                            Job Seekers
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-number">500K+</span>
-
-                        <span class="stat-title">
-                            Daily Applications
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-number">98%</span>
-
-                        <span class="stat-title">
-                            Hire Rate
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-number">150+</span>
-
-                        <span class="stat-title">
-                            Countries
-                        </span>
-
-                    </article>
-
-                </div>
+                <input
+                    id="login-email"
+                    type="email"
+                    placeholder="john@example.com"
+                >
 
             </div>
 
-        </div>
+            <div class="input-group">
+
+                <label for="login-password">
+
+                    Password
+
+                </label>
+
+                <input
+                    id="login-password"
+                    type="password"
+                    placeholder="••••••••"
+                >
+
+            </div>
+
+            <button
+                class="primary-btn"
+                type="submit"
+            >
+
+                Login
+
+            </button>
+
+            <p class="switch-form">
+
+                Don't have an account?
+
+                <button
+                    type="button"
+                    class="toggle-register"
+                >
+
+                    Register
+
+                </button>
+
+            </p>
+
+        </form>
+
+
+        <!-- ==============================
+             Register Form
+
+             Hidden by default.
+
+             JS later will simply toggle
+             display.
+        =============================== -->
+
+        <form class="register-form hidden">
+
+            <h1>
+
+                Create Account
+
+            </h1>
+
+            <p>
+
+                Create an account to apply for jobs.
+
+            </p>
+
+            <div class="input-group">
+
+                <label for="fullname">
+
+                    Full Name
+
+                </label>
+
+                <input
+                    id="fullname"
+                    type="text"
+                    placeholder="John Doe"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="register-email">
+
+                    Email
+
+                </label>
+
+                <input
+                    id="register-email"
+                    type="email"
+                    placeholder="john@example.com"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="register-password">
+
+                    Password
+
+                </label>
+
+                <input
+                    id="register-password"
+                    type="password"
+                    placeholder="••••••••"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="confirm-password">
+
+                    Confirm Password
+
+                </label>
+
+                <input
+                    id="confirm-password"
+                    type="password"
+                    placeholder="••••••••"
+                >
+
+            </div>
+
+            <button
+                class="primary-btn"
+                type="submit"
+            >
+
+                Create Account
+
+            </button>
+
+            <p class="switch-form">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    class="toggle-login"
+                >
+
+                    Login
+
+                </button>
+
+            </p>
+
+        </form>
 
     </section>
 
-    <!-- =====================================
-     Footer
-====================================== -->
-
-
 </main>
+
+
+<!-- =====================================
+     Footer
+
+     Reuse Home Footer
+====================================== -->
 
 <footer class="site-footer">
 
@@ -519,8 +534,17 @@
 </footer>
 
 
-<script src="./js/index.js" type="module" defer></script>
-    <script src="./js/jobs.js"></script>
+
+<script
+    src="./js/index.js"
+    type="module"
+></script>
+
+<script
+    src="./js/login.js"
+    type="module"
+></script>
 
 </body>
+
 </html>

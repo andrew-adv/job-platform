@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Browse Jobs | JobPlatform</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="./css/joblisting.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    >
+
+    <!-- Google Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body class="joblisting">
+
+    <!-- ======================================
+                    HEADER
+    ======================================= -->
+
+    <header class="main-header">
+
+        <nav>
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+
+                <div class="image-container">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <span>JobPlatform</span>
+
+            </a>
+
+            <!-- Desktop Navigation -->
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="joblisting.html">Find Jobs</a>
+                </li>
+
+                <li>
+                    <a href="#" class="coming-soon">My Applications</a>
+                </li>
+
+                <li>
+                    <a href="#" class="coming-soon">Message</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="container">
+
+            <!-- Search -->
+
+            <form class="search-bar">
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Search for jobs, companies..."
+                    >
+
+                </div>
+
+            </form>
+
+            <!-- Right Buttons -->
+
+            <div class="auth-links">
+
+                <button class="primary-btn coming-soon">
+                    Post a Job
+                </button>
+
+            </div>
+
+            <!-- User -->
+
+            <a class="burger image-container user">
+
+                <i class="material-symbols-outlined">
+                    person
+                </i>
+
+            </a>
+
+            <!-- Mobile Menu -->
+
+            <div class="mobile-menu">
+
+                <form class="search-bar">
+
+                    <div class="input-group">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            placeholder="Search jobs..."
+                        >
+
+                    </div>
+
+                </form>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="joblisting.html">Jobs</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="coming-soon">Applications</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="coming-soon">Messages</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ======================================
+                    MAIN
+    ======================================= -->
+
+    <main>
+
+        <section class="search-jobs">
+
+            <!-- Breadcrumb -->
+
+            <div class="breadcrumbs">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+
+                <span>
+                    Browse Jobs
+                </span>
+
+            </div>
+
+            <!-- ======================================
+                        PAGE HEADER
+            ======================================= -->
+
+            <div class="page-header">
+
+                <div>
+
+                    <h1>
+                        Find Your Dream Job
+                    </h1>
+
+                    <p>
+                        Explore thousands of opportunities from companies around the world.
+                    </p>
+
+                </div>
+
+                <div class="page-actions">
+
+                    <span>
+                        Showing <strong>24</strong> Jobs
+                    </span>
+
+                    <button>
+
+                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+
+                        Sort by: Recent
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- ======================================
+                    CONTENT
+            ======================================= -->
+
+            <div class="job-layout">
+
+                <!-- ======================================
+                            FILTER SIDEBAR
+                ======================================= -->
+
+                <aside class="filters">
+
+                    <div class="filters-header">
+
+                        <h3>
+                            Filters
+                        </h3>
+
+                        <a href="#">
+                            Clear All
+                        </a>
+
+                    </div>
+
+                    <!-- Location -->
+
+                    <div class="filter-group">
+
+                        <h4>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Location
+
+                        </h4>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+
+                            Remote
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            New York
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            San Francisco
+
+                        </label>
+
+                    </div>
+
+                    <!-- Job Type -->
+
+                    <div class="filter-group">
+
+                        <h4>
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                            Job Type
+
+                        </h4>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+
+                            Full-Time
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Contract
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Freelance
+
+                        </label>
+
+                    </div>
+
+                    <!-- Category -->
+
+                    <div class="filter-group">
+
+                        <h4>
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                            Category
+
+                        </h4>
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+
+                            Software Engineering
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            UI / UX Design
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Product Management
+
+                        </label>
+
+                    </div>
+
+                    <!-- Salary -->
+
+                    <div class="filter-group">
+
+                        <h4>
+
+                            <i class="fa-solid fa-wallet"></i>
+
+                            Salary Range
+
+                        </h4>
+
+                        <input
+                            type="range"
+                            min="50000"
+                            max="200000"
+                            value="120000"
+                        >
+
+                        <div class="salary-values">
+
+                            <span>$50k</span>
+
+                            <span>$200k</span>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+                <!-- ======================================
+                        JOB LIST
+                        (Continue next)
+                ======================================= -->
+
+                <section class="jobs-content">
+
+                    <div class="jobs-container"></div>
+                
+                <!-- ======================================
+                        Pagination
+                ======================================= -->
+
+                <div class="pagination">
+
+                    <button class="page-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button class="page-btn active">
+                        1
+                    </button>
+
+                    <button class="page-btn">
+                        2
+                    </button>
+
+                    <button class="page-btn">
+                        3
+                    </button>
+
+                    <span>...</span>
+
+                    <button class="page-btn">
+                        8
+                    </button>
+
+                    <button class="page-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+            </section>
+
+            </div>
+
+        </section>
+
+</main>
+
+<!-- ======================================
+                FOOTER
+====================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Left -->
+
+        <p>
+
+            <i class="fa-solid fa-briefcase"></i>
+
+            © 2026 JobPlatform. All rights reserved.
+
+        </p>
+
+        <!-- Right -->
+
+        <div class="footer-links">
+
+            <a
+                href="#"
+                class="coming-soon"
+            >
+                Privacy Policy
+            </a>
+
+            <a
+                href="#"
+                class="coming-soon"
+            >
+                Terms of Service
+            </a>
+
+            <a
+                href="#"
+                class="coming-soon"
+            >
+                Help Center
+            </a>
+
+            <a
+                href="#"
+                class="coming-soon"
+            >
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ======================================
+                JavaScript
+====================================== -->
+
+<script
+    type="module"
+    src="./js/jobs.js"
+></script>
+
+<script
+    type="module"
+    src="./js/joblisting.js"
+></script>
+
+<script
+    type="module"
+    src="./js/index.js"
+></script>
+
+</body>
+
+</html>

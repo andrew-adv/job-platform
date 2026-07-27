@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | JobPlatform</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="./css/dashboard.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+
+</head>
+
+<body class="dashboard">
+
+    <!-- ==================================
+            Logged In Header
+    =================================== -->
+
+    <!--
+        Reuse your logged-in header here.
+
+        We will refactor it later into a component.
+
+        For now simply copy your logged-in header.
+    -->
+
+
+
+    <main>
+
+        <!-- ==================================
+                Dashboard Hero
+        =================================== -->
+
+        <section class="dashboard-hero">
+
+            <div>
+
+                <h1>Welcome back, John 👋</h1>
+
+                <p>
+                    Here's what's happening with your job search today.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================
+                Quick Stats
+        =================================== -->
+
+        <section class="dashboard-stats">
+
+            <article class="stat-card">
+
+                <i class="fa-regular fa-bookmark"></i>
+
+                <h3>12</h3>
+
+                <p>Saved Jobs</p>
+
+            </article>
+
+
+
+            <article class="stat-card">
+
+                <i class="fa-regular fa-file-lines"></i>
+
+                <h3>5</h3>
+
+                <p>Applications</p>
+
+            </article>
+
+
+
+            <article class="stat-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>2</h3>
+
+                <p>Interviews</p>
+
+            </article>
+
+
+
+            <article class="stat-card">
+
+                <i class="fa-regular fa-user"></i>
+
+                <h3>85%</h3>
+
+                <p>Profile Complete</p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ==================================
+                Dashboard Tabs
+
+                JS will make these interactive
+                later.
+        =================================== -->
+
+        <section class="dashboard-tabs">
+
+            <button class="tab active">
+
+                Overview
+
+            </button>
+
+            <button class="tab">
+
+                My Applications
+
+            </button>
+
+            <button class="tab">
+
+                Saved Jobs
+
+            </button>
+
+            <button class="tab">
+
+                Profile
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ==================================
+                Dashboard Content
+        =================================== -->
+
+        <section class="dashboard-content">
+
+
+
+            <!-- ============================
+                    Overview
+            ============================= -->
+
+            <section class="dashboard-panel">
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        Recent Applications
+
+                    </h2>
+
+                </div>
+
+
+
+                <div class="application-list">
+
+                    <article class="application-card">
+
+                        <div>
+
+                            <h3>Frontend Developer</h3>
+
+                            <p>Google</p>
+
+                        </div>
+
+                        <span class="status reviewing">
+
+                            Reviewing
+
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="application-card">
+
+                        <div>
+
+                            <h3>UI Designer</h3>
+
+                            <p>Spotify</p>
+
+                        </div>
+
+                        <span class="status interview">
+
+                            Interview
+
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="application-card">
+
+                        <div>
+
+                            <h3>Backend Engineer</h3>
+
+                            <p>Netflix</p>
+
+                        </div>
+
+                        <span class="status rejected">
+
+                            Rejected
+
+                        </span>
+
+                    </article>
+
+                </div>
+
+
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        Recommended Jobs
+
+                    </h2>
+
+                </div>
+
+
+
+                <!--
+                    Reuse your existing
+                    job cards here.
+
+                    Copy 2 or 3 cards from
+                    the Jobs page.
+                -->
+
+                <div class="jobs-container">
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ============================
+                    Applications
+
+                    Hidden for now.
+
+                    JS later.
+            ============================= -->
+
+            <section class="dashboard-panel hidden">
+
+                <h2>
+
+                    My Applications
+
+                </h2>
+
+
+
+                <table class="applications-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Company</th>
+
+                            <th>Position</th>
+
+                            <th>Date</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Google</td>
+
+                            <td>Frontend Developer</td>
+
+                            <td>Jun 25</td>
+
+                            <td>Reviewing</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Spotify</td>
+
+                            <td>Designer</td>
+
+                            <td>Jun 21</td>
+
+                            <td>Interview</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Netflix</td>
+
+                            <td>Backend Engineer</td>
+
+                            <td>Jun 18</td>
+
+                            <td>Rejected</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+
+
+            <!-- ============================
+                    Saved Jobs
+
+                    Hidden for now.
+            ============================= -->
+
+            <section class="dashboard-panel hidden">
+
+                <h2>
+
+                    Saved Jobs
+
+                </h2>
+
+
+
+                <div class="jobs-container">
+
+                    <!--
+                        Reuse your job cards
+                        here.
+                    -->
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ============================
+                    Profile
+
+                    Hidden for now.
+            ============================= -->
+
+            <section class="dashboard-panel hidden">
+
+                <h2>
+
+                    Profile
+
+                </h2>
+
+
+
+                <div class="profile-card">
+
+                    <div class="profile-avatar">
+
+                        JD
+
+                    </div>
+
+
+
+                    <h3>
+
+                        John Doe
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Frontend Developer
+
+                    </p>
+
+
+
+                    <ul>
+
+                        <li>Email: john@email.com</li>
+
+                        <li>Location: Remote</li>
+
+                        <li>Experience: 2 Years</li>
+
+                    </ul>
+
+
+
+                    <button class="primary-btn">
+
+                        Edit Profile
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+
+    <!--
+        Reuse the footer from your
+        previous pages.
+    -->
+
+
+
+    <script type="module" src="./js/dashboard.js"></script>
+
+</body>
+
+</html>

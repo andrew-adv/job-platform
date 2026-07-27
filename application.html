@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- =====================================
+         Meta
+    ====================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Apply for Job</title>
+
+    <!-- =====================================
+         Icons
+    ====================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================
+         Stylesheets
+    ====================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./css/index.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/application.css"
+    >
+
+</head>
+
+<body>
+
+<!-- =====================================
+     Header
+
+     Reuse the exact same header from
+     the Home page.
+
+     Later this becomes a reusable JS
+     component.
+====================================== -->
+
+<header class="main-header">
+    
+        <!-- Main navigation -->
+        <nav>
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>JobPlatform</span>
+            </a>
+
+
+            <!-- Main navigation links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" >Home</a>
+                </li>
+
+                <li>
+                    <a href="joblisting.html">Jobs</a>
+                </li>
+
+                <li>
+                    <a href="#" class="coming-soon">About</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Authentication links -->
+            <div class="auth-links">
+
+                <a href="#" class="coming-soon" id="logIn">Login</a>
+
+                <a href="#" class="coming-soon">Register</a>
+
+            </div>
+
+
+            <!-- Mobile menu button -->
+            <!-- Hidden on desktop -->
+            <button class="burger">
+
+                <i class="fa-solid fa-bars"></i>
+                <span class="material-symbols-outlined close"> close
+                </span>
+            </button>
+
+        </nav>
+
+
+        <!-- ===============================
+             Mobile Navigation
+             Hidden by default
+        ================================ -->
+
+        <div class="mobile-menu">
+
+            <ul>
+
+                <li><a href="index.html" >Home</a></li>
+
+                <li><a href="#" class="coming-soon">Jobs</a></li>
+
+                <li><a href="#" class="coming-soon">About</a></li>
+
+            </ul>
+
+            <div class="auth-links">
+
+                <a href="#" class="coming-soon primary-btn">Login</a>
+
+                <a href="#" class="coming-soon primary-btn">Register</a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+<!-- =====================================
+     Main
+====================================== -->
+
+<main class="application-page">
+
+    <!-- =====================================
+         Breadcrumb
+    ====================================== -->
+
+    <section class="breadcrumb">
+
+        <a href="index.html">
+
+            Home
+
+        </a>
+
+        <span>/</span>
+
+        <a href="joblisting.html">
+
+            Jobs
+
+        </a>
+
+        <span>/</span>
+
+        <a href="jobdetails.html">
+
+            Senior Product Designer
+
+        </a>
+
+        <span>/</span>
+
+        <span>
+
+            Apply
+
+        </span>
+
+    </section>
+
+
+    <!-- =====================================
+         Application Card
+    ====================================== -->
+
+    <section class="application-card">
+
+        <!-- ==============================
+             Page Heading
+        =============================== -->
+
+        <div class="application-header">
+
+            <h1>
+
+                Apply for Senior Product Designer
+
+            </h1>
+
+            <p>
+
+                Google • Mountain View, CA • Full Time
+
+            </p>
+
+        </div>
+
+
+        <!-- ==============================
+             Application Form
+        =============================== -->
+
+        <!--
+            Later
+
+            action=""
+                ↓
+
+            Formspree endpoint
+
+        -->
+
+        <form
+            class="application-form"
+            action=""
+            method="POST"
+        >
+
+            <!-- =====================================
+                 Personal Information
+            ====================================== -->
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label for="fullname">
+
+                        Full Name
+
+                    </label>
+
+                    <input
+                        id="fullname"
+                        type="text"
+                        placeholder="John Doe"
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="email">
+
+                        Email Address
+
+                    </label>
+
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="john@example.com"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label for="phone">
+
+                        Phone Number
+
+                    </label>
+
+                    <input
+                        id="phone"
+                        type="tel"
+                        placeholder="+234..."
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="location">
+
+                        Location
+
+                    </label>
+
+                    <input
+                        id="location"
+                        type="text"
+                        placeholder="Lagos, Nigeria"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 Cover Letter
+            ====================================== -->
+
+            <div class="input-group">
+
+                <label for="cover-letter">
+
+                    Cover Letter
+
+                </label>
+
+                <textarea
+                    id="cover-letter"
+                    rows="10"
+                    placeholder="Tell us why you're a great fit..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- =====================================
+                 Resume Upload
+
+                 JS Later
+
+                 - show filename
+                 - validate type
+                 - validate size
+            ====================================== -->
+
+            <div class="input-group">
+
+                <label>
+
+                    Resume / CV
+
+                </label>
+
+                <label
+                    class="upload-box"
+                    for="resume"
+                >
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <h4>
+
+                        Click to Upload
+
+                    </h4>
+
+                    <p>
+
+                        PDF or DOCX (Max 10MB)
+
+                    </p>
+
+                    <input
+                        id="resume"
+                        type="file"
+                        hidden
+                    >
+
+                </label>
+
+            </div>
+
+
+            <!-- =====================================
+                 Agreement
+            ====================================== -->
+
+            <div class="checkbox-group">
+
+                <input
+                    id="terms"
+                    type="checkbox"
+                >
+
+                <label for="terms">
+
+                    I agree to the
+
+                    <a
+                        href="#"
+                        class="coming-soon"
+                    >
+
+                        Terms
+
+                    </a>
+
+                    and
+
+                    <a
+                        href="#"
+                        class="coming-soon"
+                    >
+
+                        Privacy Policy
+
+                    </a>
+
+                </label>
+
+            </div>
+
+
+            <!-- =====================================
+                 Buttons
+            ====================================== -->
+
+            <div class="form-actions">
+
+                <button
+                    type="button"
+                    class="secondary-btn coming-soon"
+                >
+
+                    Save as Draft
+
+                </button>
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+
+                    Submit Application
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================
+     Footer
+
+     Reuse your Home page footer.
+
+====================================== -->
+
+<footer>
+
+    <!-- Copy Home Page footer here -->
+
+</footer>
+
+<!--
+
+    This HTML is about 95% of what you'll need. When we add JS later, we'll mainly:
+
+validate the form,
+display the selected resume filename,
+submit to Formspree,
+redirect to success.html after a successful submission.
+-->
+
+
+<script
+    src="./js/index.js"
+    type="module"
+></script>
+
+<script
+    src="./js/application.js"
+    type="module"
+></script>
+
+</body>
+
+</html>
