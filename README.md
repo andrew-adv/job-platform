@@ -22,30 +22,73 @@ This project serves as a foundation for future features such as authentication, 
 
 ## Features
 
-### Current Features
+##### 🚧 Current Progress
 
-- Responsive navigation
-- Mobile navigation menu
-- Hero section with job search UI
-- Dynamic Featured Jobs section
-- Previous / Next job pagination
-- Responsive job cards
-- Newsletter subscription form
-- Client-side newsletter validation
-- Under Construction page for unfinished routes
-- Responsive CTA section
-- Responsive footer
+The project has moved beyond a simple landing page and is now a multi-page frontend application.
 
-### In Progress
+### ✅ Completed Pages
 
-- Jobs Listing page
-- Job Details page
+- Home Page
+- Browse Jobs
+- Job Details
+- Apply for Job
+- Application Success
+- Login / Register
+- Dashboard
+- Under Construction
+
+---
+
+## ✨ Implemented Features
+
+### Home
+
+- Hero Section
+- Search Bar
+- Featured Jobs
+
+- CTA Section
+- Footer
+- Newsletter Form
+
+### Jobs
+
+- Dynamic job cards
+- Pagination
+- Job search layout
+- Filters UI
+
+### Forms
+
+- Newsletter validation
 - Application form
-- Success page
+- Resume upload UI
+
+### Authentication
+
+- Login/Register UI
+- Responsive authentication layout
+
+### Dashboard
+
+- Statistics cards
+- Saved jobs section
+- Applications section
+- Profile overview
+
+### General
+
+- Responsive layouts
+- Mobile navigation
+- Shared styling
+- Under Construction page for unfinished routes
 
 
 ### Planned
 
+- Categories
+- Companies
+- Testimonials
 - Login & Registration
 - Local Storage authentication
 - Saved Jobs
@@ -88,21 +131,34 @@ Coming soon.
 
 ```
 job-platform/
-│
-├── assets/
-│   ├── images/
-│   └── logos/
+
 │
 ├── css/
 │   ├── index.css
-│   └── construction.css
+│   ├── joblisting.css
+│   ├── jobdetails.css
+│   ├── application.css
+│   ├── dashboard.css
+│   ├── login.css
+│   ├── construction.css
 │
 ├── js/
 │   ├── index.js
-│   └── jobs.js
+│   ├── jobs.js
+│   ├── joblisting.js
+│   
+├── data/
+│
+├── images/
 │
 ├── index.html
+├── joblisting.html
+├── jobdetails.html
+├── application.html
+├── dashboard.html
+├── login.html
 ├── construction.html
+│
 └── README.md
 ```
 
@@ -129,7 +185,7 @@ job-platform/
 
 ### Phase 3 — Application Features
 
-- [ ] Job listings
+- [x] Job listings
 - [ ] Company profiles
 - [ ] Search functionality
 - [ ] Saved jobs
