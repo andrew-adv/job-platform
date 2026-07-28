@@ -19,6 +19,11 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+    >
+
 </head>
 
 <body class="dashboard">
@@ -35,234 +40,133 @@
         For now simply copy your logged-in header.
     -->
 
+    <aside>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-briefcase"></i>
+            <h2>JobPlatform</h2>
+        </a>
 
+        <div class="user-profile">
+            <div>
+                <img src="./assets/images/logos/spotify.png" alt="" class="image-container user">
+            </div>
+            <div>
+                <h4>Alex Doe</h4>
+                <p>Product Designer</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#" class="active">
+
+                <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                <span>Dashboard</span>
+
+            </a>
+
+            
+            <a href="#" >
+
+                <span class="material-symbols-outlined" data-icon="dashboard">bookmark</span>
+                <span>Saved Jobs</span>
+
+            </a>
+
+            <a href="#" >
+
+                <span class="material-symbols-outlined" data-icon="dashboard">cases</span>
+                <span>My Application</span>
+
+            </a>
+            <a href="#" >
+
+                <span class="material-symbols-outlined" data-icon="dashboard">timer</span>
+                <span>Pending</span>
+
+            </a>
+
+            <a href="#" >
+
+                <span class="material-symbols-outlined" data-icon="dashboard">settings</span>
+                <span>Profile</span>
+
+            </a>
+
+
+        </nav>
+
+        <div class="aside-footer">
+            <button class="primary-btn">
+                <span class="material-symbols-outlined text-[20px]" data-icon="search">search</span>
+                 Quick Search 
+            </button>
+
+            <a href="index.html" class="coming-soon">
+                <span class="material-symbols-outlined" data-icon="logout">logout</span>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
 
     <main>
+        <header class="main-header">
+            <!-- Search Section -->
+            <div class="search-bar">
+                <span class="material-symbols-outlined">search</span>
+
+                <input
+                    type="text"
+                    placeholder="Search for jobs, companies..."
+                >
+            </div>
+
+            <!-- Right Section -->
+            <div class="header-right">
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <a href="#">Companies</a>
+                    <a href="#">Salaries</a>
+                    <a href="#">Messages</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+
+                    <button class="icon-button notification-button">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <button class="icon-button">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+
+                    <button class="profile-button">
+                        Post 
+                    </button>
+
+                </div>
+
+            </div>
+        </header>
 
         <!-- ==================================
                 Dashboard Hero
         =================================== -->
 
-        <section class="dashboard-hero">
+        <section class="main-content">
 
-            <div>
+        
+            <section class="dashboard-hero">
 
-                <h1>Welcome back, John 👋</h1>
+                <div>
 
-                <p>
-                    Here's what's happening with your job search today.
-                </p>
+                    <h1>Welcome back, Alex 👋</h1>
 
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================
-                Quick Stats
-        =================================== -->
-
-        <section class="dashboard-stats">
-
-            <article class="stat-card">
-
-                <i class="fa-regular fa-bookmark"></i>
-
-                <h3>12</h3>
-
-                <p>Saved Jobs</p>
-
-            </article>
-
-
-
-            <article class="stat-card">
-
-                <i class="fa-regular fa-file-lines"></i>
-
-                <h3>5</h3>
-
-                <p>Applications</p>
-
-            </article>
-
-
-
-            <article class="stat-card">
-
-                <i class="fa-solid fa-calendar-check"></i>
-
-                <h3>2</h3>
-
-                <p>Interviews</p>
-
-            </article>
-
-
-
-            <article class="stat-card">
-
-                <i class="fa-regular fa-user"></i>
-
-                <h3>85%</h3>
-
-                <p>Profile Complete</p>
-
-            </article>
-
-        </section>
-
-
-
-        <!-- ==================================
-                Dashboard Tabs
-
-                JS will make these interactive
-                later.
-        =================================== -->
-
-        <section class="dashboard-tabs">
-
-            <button class="tab active">
-
-                Overview
-
-            </button>
-
-            <button class="tab">
-
-                My Applications
-
-            </button>
-
-            <button class="tab">
-
-                Saved Jobs
-
-            </button>
-
-            <button class="tab">
-
-                Profile
-
-            </button>
-
-        </section>
-
-
-
-        <!-- ==================================
-                Dashboard Content
-        =================================== -->
-
-        <section class="dashboard-content">
-
-
-
-            <!-- ============================
-                    Overview
-            ============================= -->
-
-            <section class="dashboard-panel">
-
-                <div class="section-heading">
-
-                    <h2>
-
-                        Recent Applications
-
-                    </h2>
-
-                </div>
-
-
-
-                <div class="application-list">
-
-                    <article class="application-card">
-
-                        <div>
-
-                            <h3>Frontend Developer</h3>
-
-                            <p>Google</p>
-
-                        </div>
-
-                        <span class="status reviewing">
-
-                            Reviewing
-
-                        </span>
-
-                    </article>
-
-
-
-                    <article class="application-card">
-
-                        <div>
-
-                            <h3>UI Designer</h3>
-
-                            <p>Spotify</p>
-
-                        </div>
-
-                        <span class="status interview">
-
-                            Interview
-
-                        </span>
-
-                    </article>
-
-
-
-                    <article class="application-card">
-
-                        <div>
-
-                            <h3>Backend Engineer</h3>
-
-                            <p>Netflix</p>
-
-                        </div>
-
-                        <span class="status rejected">
-
-                            Rejected
-
-                        </span>
-
-                    </article>
-
-                </div>
-
-
-
-                <div class="section-heading">
-
-                    <h2>
-
-                        Recommended Jobs
-
-                    </h2>
-
-                </div>
-
-
-
-                <!--
-                    Reuse your existing
-                    job cards here.
-
-                    Copy 2 or 3 cards from
-                    the Jobs page.
-                -->
-
-                <div class="jobs-container">
+                    <p>
+                        You have 3 interviews scheduled for this week. Good luck!
+                    </p>
 
                 </div>
 
@@ -270,181 +174,351 @@
 
 
 
-            <!-- ============================
-                    Applications
-
-                    Hidden for now.
-
-                    JS later.
-            ============================= -->
-
-            <section class="dashboard-panel hidden">
-
-                <h2>
-
-                    My Applications
-
-                </h2>
-
-
-
-                <table class="applications-table">
-
-                    <thead>
-
-                        <tr>
-
-                            <th>Company</th>
-
-                            <th>Position</th>
-
-                            <th>Date</th>
-
-                            <th>Status</th>
-
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-
-                            <td>Google</td>
-
-                            <td>Frontend Developer</td>
-
-                            <td>Jun 25</td>
-
-                            <td>Reviewing</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>Spotify</td>
-
-                            <td>Designer</td>
-
-                            <td>Jun 21</td>
-
-                            <td>Interview</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>Netflix</td>
-
-                            <td>Backend Engineer</td>
-
-                            <td>Jun 18</td>
-
-                            <td>Rejected</td>
-
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </section>
-
-
-
-            <!-- ============================
-                    Saved Jobs
-
-                    Hidden for now.
-            ============================= -->
-
-            <section class="dashboard-panel hidden">
-
-                <h2>
-
-                    Saved Jobs
-
-                </h2>
-
-
-
-                <div class="jobs-container">
-
-                    <!--
-                        Reuse your job cards
-                        here.
-                    -->
-
-                </div>
-
-            </section>
-
-
-
-            <!-- ============================
-                    Profile
-
-                    Hidden for now.
-            ============================= -->
-
-            <section class="dashboard-panel hidden">
-
-                <h2>
-
-                    Profile
-
-                </h2>
-
-
-
-                <div class="profile-card">
-
-                    <div class="profile-avatar">
-
-                        JD
+            <!-- ==================================
+                    Quick Stats
+            =================================== -->
+
+            <section class="dashboard-cards">
+
+                <!-- Applications -->
+                <article class="dashboard-card">
+                    <div class="card-header">
+
+                        <div class="card-icon applications-icon">
+                            <span class="material-symbols-outlined">send</span>
+                        </div>
+
+                        <span class="card-badge increase">
+                            +12%
+                        </span>
 
                     </div>
 
+                    <p class="card-title">Applications</p>
+                    <h2 class="card-number">42</h2>
+                </article>
+
+                <!-- Interviews -->
+                <article class="dashboard-card">
+                    <div class="card-header">
+
+                        <div class="card-icon interviews-icon">
+                            <span class="material-symbols-outlined">event</span>
+                        </div>
+
+                        <span class="card-badge upcoming">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+                    <p class="card-title">Interviews</p>
+                    <h2 class="card-number">03</h2>
+                </article>
+
+                <!-- Saved Jobs -->
+                <article class="dashboard-card">
+                    <div class="card-header">
+
+                        <div class="card-icon saved-icon">
+                            <span class="material-symbols-outlined">bookmark</span>
+                        </div>
+
+                        <span class="card-badge total">
+                            Total
+                        </span>
+
+                    </div>
+
+                    <p class="card-title">Saved Jobs</p>
+                    <h2 class="card-number">15</h2>
+                </article>
+
+                <!-- Profile Views -->
+                <article class="dashboard-card">
+                    <div class="card-header">
+
+                        <div class="card-icon views-icon">
+                            <span class="material-symbols-outlined">visibility</span>
+                        </div>
+
+                        <span class="card-badge increase">
+                            +28%
+                        </span>
+
+                    </div>
+
+                    <p class="card-title">Profile Views</p>
+                    <h2 class="card-number">1.2K</h2>
+                </article>
+
+            </section>
 
 
-                    <h3>
 
-                        John Doe
+            <!-- ==================================
+                    Dashboard Tabs
 
-                    </h3>
+                    JS will make these interactive
+                    later.
+            =================================== -->
+
+            <section class="dashboard-tabs">
+
+                <button class="tab active">
+
+                    Overview
+
+                </button>
+
+                <button class="tab">
+
+                    My Applications
+
+                </button>
+
+                <button class="tab">
+
+                    Saved Jobs
+
+                </button>
+
+                <button class="tab">
+
+                    Profile
+
+                </button>
+
+            </section>
 
 
 
-                    <p>
+            <!-- ==================================
+                    Dashboard Content
+            =================================== -->
 
-                        Frontend Developer
+            <section class="content-section">
 
-                    </p>
+            <!-- Recommended Jobs -->
+            <section class="recommended-jobs">
 
+                <div class="section-header">
+                    <h2>Recommended Jobs</h2>
 
+                    <a href="#" class="view-all">
+                        View All
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
 
-                    <ul>
+                <div class="job-list">
 
-                        <li>Email: john@email.com</li>
+                    <!-- Job Card -->
+                    <article class="job-card">
 
-                        <li>Location: Remote</li>
+                        <div class="company-logo">
+                            <img src="images/lumina.png" alt="Lumina Tech Logo">
+                        </div>
 
-                        <li>Experience: 2 Years</li>
+                        <div class="job-info">
 
-                    </ul>
+                            <div class="job-top">
 
+                                <div>
+                                    <h3>Senior Product Designer</h3>
+                                    <p>Lumina Tech • San Francisco, CA (Remote)</p>
+                                </div>
 
+                                <button class="bookmark-btn">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                </button>
 
-                    <button class="primary-btn">
+                            </div>
 
-                        Edit Profile
+                            <div class="job-bottom">
 
-                    </button>
+                                <div class="job-tags">
+                                    <span>Full-time</span>
+                                    <span>$140k - $180k</span>
+                                </div>
+
+                                <button class="apply-btn">
+                                    Apply Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Job Card -->
+                    <article class="job-card">
+
+                        <div class="company-logo">
+                            <img src="images/vertex.png" alt="Vertex Solutions Logo">
+                        </div>
+
+                        <div class="job-info">
+
+                            <div class="job-top">
+
+                                <div>
+                                    <h3>Lead UX Researcher</h3>
+                                    <p>Vertex Solutions • New York, NY</p>
+                                </div>
+
+                                <button class="bookmark-btn">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                </button>
+
+                            </div>
+
+                            <div class="job-bottom">
+
+                                <div class="job-tags">
+                                    <span>Contract</span>
+                                    <span>$90/hr - $110/hr</span>
+                                </div>
+
+                                <button class="apply-btn">
+                                    Apply Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Job Card -->
+                    <article class="job-card">
+
+                        <div class="company-logo">
+                            <img src="images/prism.png" alt="Prism Creative Logo">
+                        </div>
+
+                        <div class="job-info">
+
+                            <div class="job-top">
+
+                                <div>
+                                    <h3>Visual Design Manager</h3>
+                                    <p>Prism Creative • Austin, TX</p>
+                                </div>
+
+                                <button class="bookmark-btn">
+                                    <span class="material-symbols-outlined">bookmark</span>
+                                </button>
+
+                            </div>
+
+                            <div class="job-bottom">
+
+                                <div class="job-tags">
+                                    <span>Full-time</span>
+                                    <span>$150k - $200k</span>
+                                </div>
+
+                                <button class="apply-btn">
+                                    Apply Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
             </section>
 
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+                <section class="recent-activity">
+
+                    <h2>Recent Activity</h2>
+
+                    <div class="activity-list">
+
+                        <article class="activity-item">
+                            <div class="activity-icon success">
+                                <span class="material-symbols-outlined">check_circle</span>
+                            </div>
+
+                            <div>
+                                <h4>Application Sent</h4>
+                                <p>Applied to Senior Designer at Lumina Tech.</p>
+                                <small>2 HOURS AGO</small>
+                            </div>
+                        </article>
+
+                        <article class="activity-item">
+                            <div class="activity-icon info">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+
+                            <div>
+                                <h4>New Message</h4>
+                                <p>Recruiter from Vertex Solutions sent you a message.</p>
+                                <small>5 HOURS AGO</small>
+                            </div>
+                        </article>
+
+                        <article class="activity-item">
+                            <div class="activity-icon warning">
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+
+                            <div>
+                                <h4>Job Recommended</h4>
+                                <p>A new role matches your profile.</p>
+                                <small>YESTERDAY</small>
+                            </div>
+                        </article>
+
+                        <article class="activity-item">
+                            <div class="activity-icon neutral">
+                                <span class="material-symbols-outlined">update</span>
+                            </div>
+
+                            <div>
+                                <h4>Profile Updated</h4>
+                                <p>You updated your portfolio.</p>
+                                <small>2 DAYS AGO</small>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <button class="history-btn">
+                        View History
+                    </button>
+
+                </section>
+
+                <section class="promo-card">
+
+                    <h3>Upgrade to Pro</h3>
+
+                    <p>
+                        Get 3× more visibility and connect directly with recruiters.
+                    </p>
+
+                    <button class="trial-btn">
+                        Start Trial
+                    </button>
+                    <button class="floating-action-btn">
+                        <span class="material-symbols-outlined">add</span>
+                    </button>
+
+                </section>
+
+            </aside>
+
+        </section>
         </section>
 
     </main>

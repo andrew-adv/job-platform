@@ -1,322 +1,233 @@
-/*
-==================================================
-Job Listing Page
-==================================================
+    :root {
 
-This stylesheet only affects:
+        /* font size */
 
-joblisting.html
+        --size-base: 16px;
 
-Future Improvement:
-Move colors, spacing, fonts and shadows
-into variables.css after the UI is complete.
+        /* --size-xm: 4px;
+        --size-sm: 8px;
+        --size-md: 12px;
+        --size-lg: 20px;
+        -- */
+    }
 
-==================================================
-*/
+    html {
+        font-size: var(--size-base);
+    }
 
+    body.joblisting {
+        background: #f6f6f8;
+        font-family:  Arial, sans-serif;
+    }
 
-/*
-==================================================
-Page Setup
-==================================================
-*/
+    body.logged-in .logged-in {
+        display: block;
+    }
 
-body.joblisting{
+    body.logged-in .logged-out {
+        display: none;
+    }
 
-    background:#f8fafc;
-}
+    body.joblisting .main-header {
+        color: #fff;
+        
+        display: flex;
+        justify-content: space-between;
 
+        padding: .7rem 2.5rem ;
+        padding-right: .7rem;
 
-/*
-==================================================
-Header Overrides
+        border-bottom:  .5px solid #e2e8f0;
 
-The homepage header already exists.
+        box-shadow: none;
 
-These rules only modify it for
-the Job Listing page.
+        position: relative;
+    }
 
-==================================================
-*/
 
-/* body.joblisting .main-header{
+    body.joblisting .container {
+        display: flex;
+        place-items: center;
+        flex: .8 1 0%;
+        gap: 1.8rem;
+        width: max-content;
 
-    position:sticky;
+        margin: 0;
+    }
 
-    top:0;
+   .logo {
 
-    z-index:100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
 
-    background:#ffffff;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+    }
 
-    border-bottom:1px solid #e2e8f0;
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    box-shadow:none;
-} */
+        color: #fff;
+        background-color: #1152d4;
+        
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+    }
 
-/*
-==================================================
-Logged In Header
-==================================================
+    .image-container.user {
 
-This page uses a different header than
-the landing page.
+        flex:13%;
 
-Future Improvement:
-Extract common header styles into
-header.css
+        width: 3rem;
+        height: 3rem;
 
-==================================================
-*/
+        aspect-ratio: 1 / 1;
+        
+        background: #e2e8f0;
 
-body.joblisting .main-header{
+        color: #000;
 
-    display:flex;
+        box-sizing: border-box;
 
-    justify-content:space-between;
+        border: 1px solid #cbd5e1;
 
-    align-items:center;
+        border-radius: 50%;
 
-    gap:2rem;
+        overflow: hidden;
+    }
+
+    body.joblisting .search-bar  {
+        /* all: initial; */
+        max-width: none;
+        box-shadow: none;
+        min-width: 15rem;
 
-    background:#ffffff;
+        /* flex: 1 1 0%; */
+        
+        margin: 0;
 
-    border-bottom:1px solid #e2e8f0;
+        background-color: #f1f5f9;
 
-    position:sticky;
+        padding: 0;
+        padding-left: 1rem;
 
-    top:0;
+        
+        width: 100%;
+        height: 100%;
 
-    z-index:100;
-}
+        border-radius: .7rem;
+        border: .2px solid rgba(0, 0, 0, 0.262);
+    }
 
+    body.joblisting .input-group{
+        padding: 0;
 
-/*
-==================================================
-Navigation
-==================================================
-*/
+        /* flex: 2 1 0%; */
+        color: #64748b;
+        
+        gap:0;
+        height: 100%;
+        width: 100%;
 
-body.joblisting nav{
+        
+    }
+    body.joblisting .input-group input {
+        font-weight: 400;
+        background-color: transparent;
+        font-size: .9rem;
+        
+        padding: 0.4rem;
+        padding-left: .5rem;
+        padding-right: 1rem;
 
-    display:flex;
 
-    align-items:center;
+        width: 100%;
+        height: 100%;
+    }
 
-    gap:2rem;
-}
 
-body.joblisting .logo{
+    body.joblisting nav{
+        padding: 0;
+        justify-content: end;
 
-    display:flex;
+    }
 
-    align-items:center;
+    body.joblisting nav a{
+        font-family: inter;
+        font-weight: 600;
+        color: #344155;
+    }
 
-    gap:.8rem;
+    body.joblisting .mobile-menu {
+        text-align: left;
+        top: 4rem;
+        right: -.2rem;
+    }
 
-    text-decoration:none;
+    body.joblisting .mobile-menu .search-bar {
+        box-sizing: border-box;
+        max-width: 95%;
+        min-width: 95%;
+        margin: auto;
+        margin-top: 1rem;
+    }
 
-    color:#0f172a;
+    @media (width <= 750px) {
 
-    font-size:1.1rem;
+        body.joblisting .container {
+            flex: 0; 
+            justify-content:self-end;
+        }
+        
+        .container * {
+            flex: none !important;
+        }
 
-    font-weight:700;
-}
+        .container > .search-bar, .container > .auth-links {
+            display: none;
+        }
+    }
 
-body.joblisting .logo:hover{
 
-    color:#1152d4;
-}
 
-body.joblisting .nav-links{
+    body.joblisting .jobs-container {
 
-    display:flex;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 
-    align-items:center;
 
-    gap:2rem;
 
-    list-style:none;
-}
+    .stripA {
+        text-decoration: none !important;
+        color: inherit;
+    }
 
-body.joblisting .nav-links a{
+    main {
+        padding: 2rem 8rem;
+    }
 
-    text-decoration:none;
+    .search-jobs .header {
+        margin-bottom: 3rem;
+        padding: 2px;
+    }
 
-    color:#334155;
 
-    font-weight:600;
+    .flex {
+        display: flex;
+        gap:1rem;
+    }
 
-    transition:.2s;
-}
 
-body.joblisting .nav-links a:hover{
 
-    color:#1152d4;
-}
 
 
-/*
-==================================================
-Header Right Side
-==================================================
-*/
-
-body.joblisting .container{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:1.5rem;
-
-    flex:1;
-
-    justify-content:flex-end;
-}
-
-
-/*
-==================================================
-Search Bar
-==================================================
-*/
-
-body.joblisting .search-bar{
-
-    width:100%;
-
-    max-width:550px;
-
-    background:#f8fafc;
-
-    border:1px solid #dbe2ea;
-
-    border-radius:.8rem;
-
-    /* padding:.7rem 1rem; */
-
-    box-shadow:none;
-}
-
-body.joblisting .input-group{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:.8rem;
-}
-
-body.joblisting .input-group i{
-
-    color:#64748b;
-}
-
-body.joblisting .input-group input{
-
-    width:100%;
-
-    border:none;
-
-    outline:none;
-
-    background:transparent;
-
-    font-size:.95rem;
-}
-
-
-/*
-==================================================
-Action Buttons
-==================================================
-*/
-
-body.joblisting .auth-links{
-
-    display:flex;
-
-    align-items:center;
-}
-
-body.joblisting .primary-btn{
-
-    padding:.8rem 1.3rem;
-
-    border:none;
-
-    border-radius:.6rem;
-
-    background:#1152d4;
-
-    color:#ffffff;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.25s;
-}
-
-body.joblisting .primary-btn:hover{
-
-    background:#0d47bf;
-}
-
-
-/*
-==================================================
-Profile Icon
-==================================================
-*/
-
-body.joblisting .image-container.user{
-
-    width:3rem;
-
-    /* height:3rem; */
-
-    border-radius:50%;
-
-    border:1px solid #dbe2ea;
-
-    background:#f1f5f9;
-
-    color:#334155;
-
-    cursor:pointer;
-
-    transition:.25s;
-}
-
-body.joblisting .image-container.user:hover{
-
-    background:#e2e8f0;
-}
-
-
-/*
-==================================================
-Mobile Menu
-
-Already controlled by index.js
-
-Only positioning here.
-
-==================================================
-*/
-
-body.joblisting .mobile-menu{
-
-    position:absolute;
-
-    top:100%;
-
-    right:2rem;
-
-    width:320px;
-}
 
 /*
 ==================================================
@@ -350,24 +261,24 @@ Breadcrumb
 ==================================================
 */
 
-.breadcrumbs{
 
-    display:flex;
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #64748b;
 
-    align-items:center;
-
-    gap:.5rem;
-
-    margin-bottom:2rem;
-
-    font-size:.9rem;
+    font-family:"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.breadcrumbs a{
+.breadcrumbs a {
+    color: inherit;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    color:#64748b;
+    transition: .2s;
 }
 
 .breadcrumbs a:hover{
@@ -377,7 +288,7 @@ Breadcrumb
 
 .breadcrumbs span:last-child{
 
-    font-weight:600;
+    /* font-weight:500; */
 
     color:#0f172a;
 }
@@ -416,31 +327,38 @@ Page Header
     font-size:1rem;
 }
 
-
 /*
 ==================================================
 Header Actions
 ==================================================
 */
 
+
 .page-actions{
 
+    padding: .5rem;
+    
+    background-color: #f1f5f9;
+    
     display:flex;
-
+    
     align-items:center;
+    
+    gap:.4rem;
 
-    gap:1rem;
+    border-radius: 1rem;
+}
+
+.vertical-divider {
+    background-color: #646464;
+    width: 1px;
+    height: 1.2rem;
+    margin-inline: .5rem;
 }
 
 .page-actions span{
 
-    background:#ffffff;
-
-    padding:.9rem 1.2rem;
-
-    border-radius:.8rem;
-
-    border:1px solid #e2e8f0;
+    padding-left:.9rem;
 
     font-weight:600;
 }
@@ -468,25 +386,331 @@ Header Actions
 }
 
 
+
+
+.job-layout {
+    display: flex;
+
+    gap: 3rem;
+}
+
+.jobs-content {
+    width: 100%;
+}
+
+.filters {
+    padding: 1.4rem;
+
+    width:35%;
+
+    height: max-content;
+
+    background-color: #fff;
+
+    border-radius: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+    position: sticky;
+
+    top: 20px;
+}
+
+.filters-header {
+    
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.filter-group > :first-child{
+    padding-top: 20px;
+    
+    margin-top: 20px;
+
+    border-top: .5px solid #cbd5e19e
+}
+
+.filters-header a {
+    text-decoration: none;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+.filter-group h4{
+    display: flex;
+
+    align-items: center;
+
+    gap: .3rem;
+
+    margin-bottom: 1rem;
+}
+
+.filter-group h4 i {
+    color: #1152d4;
+}
+
+.filter-group label:not(:first-child) {
+    margin-top: .5rem;
+}
+
+.salary-values {
+    display: flex;
+    
+    justify-content: space-between;    
+
+    font-size: .75rem;
+
+    margin-top: .4rem;
+}
+
+.filter-group label {
+    padding-inline: .1rem;
+    display: flex;
+    gap: .6rem;
+}
+
+.filter-group input[type="checkbox"] {
+
+    cursor: pointer;
+
+    
+    accent-color: #d43511;
+
+    width: 1rem;
+    
+}
+
+.filter-group input[type="range"] {
+  appearance: none;
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 9px;
+  background: #cbd5e1;
+  border: none;
+  border-radius: 999px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #d43511;
+  border-radius: 50%;
+  margin-top: -4px; /* Centers thumb on track */
+}
+
+@media (width <= 750px) {
+    .page-header {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .page-actions {
+        justify-content: center;
+    }
+
+    .filters {
+        position: static;
+
+        width: 100%;
+
+        margin-bottom: 1.5rem;
+    }
+    
+    .job-layout {
+        display: block;
+
+    }
+}
+
+
+
+
+.pagination {
+    margin-top: 2rem;
+
+    padding-top: 3rem;
+    
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    font-size: 3rem;
+}
+
+.pagination button {
+
+    font-weight: 700;
+
+    font-size: 2rem;
+
+    padding: .7rem 1rem;
+    
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: .05rem solid #cbd5e1;
+    
+    border-radius: .8rem;
+
+    cursor: pointer;
+}
+
+.pagination button:hover {
+
+    opacity: .9;
+
+    transform: translateY(-2px);
+
+}
+
+    /*
+==================================================
+Footer
+==================================================
+*/
+
+.site-footer{
+
+    margin-top:5rem;
+
+    padding:2rem 8rem;
+
+    border-top:1px solid #e2e8f0;
+
+    background:#fff;
+}
+
 /*
 ==================================================
-Main Layout
+TODO (Variables)
 
-Sidebar
-+
+Background
 
-Job Cards
+#ffffff
+
+↓
+
+var(--color-surface)
 
 ==================================================
 */
 
-.job-layout{
 
-    display:grid;
+.footer-container{
 
-    grid-template-columns:280px 1fr;
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
 
     gap:2rem;
 
-    align-items:start;
+    flex-wrap:wrap;
+}
+
+.footer-container p{
+
+    color:#64748b;
+
+    font-size:.9rem;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.5rem;
+}
+
+/*
+==================================================
+TODO
+
+Move font-size into typography variables.
+
+==================================================
+*/
+
+
+.footer-links{
+
+    display:flex;
+
+    gap:2rem;
+
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#64748b;
+
+    font-size:.9rem;
+
+    transition:.25s;
+}
+
+.footer-links a:hover{
+
+    color:#1152d4;
+}
+
+/*
+==================================================
+Responsive Footer
+==================================================
+*/
+
+@media(width <= 900px){
+
+.site-footer{
+
+    padding:2rem;
+}
+
+.footer-container{
+
+    flex-direction:column;
+
+    text-align:center;
+}
+
+.footer-links{
+
+    justify-content:center;
+}
+
+}
+
+@media(width <= 600px){
+
+.footer-links{
+
+    gap:1rem;
+}
+
+.footer-links a{
+
+    font-size:.8rem;
+}
+
 }

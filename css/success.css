@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    position: sticky;
+
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header-left {
+    gap: 1rem;
+}
+/* ===========================
+   Success Page
+=========================== */
+
+.success-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:40px;
+
+    background:#f8fafc;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.success-card{
+    width:100%;
+    max-width:700px;
+
+    background:#fff;
+
+    border:1px solid #e5e7eb;
+    border-radius:15px;
+
+    padding:50px 40px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   Success Icon
+=========================== */
+
+.success-icon{
+    width:120px;
+    height:120px;
+
+    margin:0 auto 30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#dcfce7;
+    border-radius:50%;
+}
+
+.success-icon span{
+    font-size:70px;
+    color:#16a34a;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.success-header h1{
+    margin-bottom:15px;
+
+    font-size:32px;
+    color:#1e293b;
+}
+
+.success-header p{
+    max-width:500px;
+
+    margin:0 auto 40px;
+
+    color:#64748b;
+    line-height:1.7;
+}
+
+/* ===========================
+   Summary Card
+=========================== */
+
+.application-summary{
+    padding:25px;
+
+    background:#f8fafc;
+
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+
+    text-align:left;
+
+    margin-bottom:35px;
+}
+
+.summary-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    gap:20px;
+}
+
+/* ===========================
+   Job Details
+=========================== */
+
+.summary-label{
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#2563eb;
+
+    font-size:12px;
+    font-weight:bold;
+
+    text-transform:uppercase;
+}
+
+.job-details h2{
+    margin-bottom:12px;
+
+    color:#1e293b;
+}
+
+.job-information{
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.job-information span{
+    display:flex;
+    align-items:center;
+    gap:5px;
+
+    color:#64748b;
+    font-size:14px;
+}
+
+/* ===========================
+   Company Logo
+=========================== */
+
+.company-logo{
+    width:70px;
+    height:70px;
+
+    background:#fff;
+
+    border:1px solid #ddd;
+    border-radius:10px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.company-logo img{
+    width:60px;
+}
+
+/* ===========================
+   Summary Footer
+=========================== */
+
+.summary-footer{
+    margin-top:25px;
+    padding-top:20px;
+
+    border-top:1px solid #ddd;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.application-date{
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    color:#64748b;
+    font-size:14px;
+}
+
+.details-btn{
+    display:flex;
+    align-items:center;
+    gap:5px;
+
+    background:none;
+    border:none;
+
+    color:#2563eb;
+
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.details-btn:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    margin-bottom:35px;
+}
+
+.action-buttons a {
+    text-decoration: none;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.primary-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+}
+
+.primary-btn:hover{
+    background:#1d4ed8;
+}
+
+.secondary-btn{
+    background:#fff;
+    color:#334155;
+
+    border:1px solid #cbd5e1;
+}
+
+.secondary-btn:hover{
+    background:#f8fafc;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.support-links p{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.support-links a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.support-links a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    .summary-header,
+    .summary-footer,
+    .action-buttons{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .company-logo{
+        align-self:center;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+    }
+
+}

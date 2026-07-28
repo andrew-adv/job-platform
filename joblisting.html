@@ -1,68 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
 
-    <meta charset="UTF-8">
+        <meta name= "viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+        <title>Browse Jobs</title>
 
-    <title>Browse Jobs | JobPlatform</title>
+        <link rel="stylesheet" href="./css/index.css">
 
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/joblisting.css">
 
-    <!-- Page Styles -->
-    <link rel="stylesheet" href="./css/joblisting.css">
-
-    <!-- Font Awesome -->
-    <link
+        <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
     >
-
-    <!-- Google Icons -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap"
-        rel="stylesheet"
-    >
-
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        
+    </head>
 
 <body class="joblisting">
-
-    <!-- ======================================
-                    HEADER
-    ======================================= -->
-
+        
+        <!-- ===============================
+         Header
+    ================================ -->
     <header class="main-header">
 
         <nav>
 
             <!-- Logo -->
             <a href="index.html" class="logo">
-
                 <div class="image-container">
                     <i class="fa-solid fa-briefcase"></i>
                 </div>
-
                 <span>JobPlatform</span>
-
             </a>
-
-            <!-- Desktop Navigation -->
-
+            
+            <!-- Main navigation links -->
             <ul class="nav-links">
 
                 <li>
-                    <a href="joblisting.html">Find Jobs</a>
+                    <a href="index.html" >Find Jobs</a>
                 </li>
 
                 <li>
-                    <a href="#" class="coming-soon">My Applications</a>
+                    <a href="joblisting.html" class="coming-soon">My Applications</a>
                 </li>
 
                 <li>
@@ -71,17 +55,18 @@
 
             </ul>
 
+
+            
         </nav>
-
+        
         <div class="container">
-
-            <!-- Search -->
 
             <form class="search-bar">
 
+                <!-- Job Title -->
                 <div class="input-group">
 
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass "></i>
 
                     <input
                         type="text"
@@ -92,78 +77,78 @@
 
             </form>
 
-            <!-- Right Buttons -->
-
+            <!-- Authentication links -->
             <div class="auth-links">
 
-                <button class="primary-btn coming-soon">
-                    Post a Job
-                </button>
+                <button class="coming-soon primary-btn">Post a Job</button>
 
             </div>
 
-            <!-- User -->
+            <div>
+                <a class="burger image-container user">
+                    <i class="material-symbols-outlined"> person </i>
+                    <span>X</span>
+                </a>
 
-            <a class="burger image-container user">
-
-                <i class="material-symbols-outlined">
-                    person
-                </i>
-
-            </a>
-
-            <!-- Mobile Menu -->
-
-            <div class="mobile-menu">
+            </div>
+            
+            
+            <!-- ===============================
+                 Mobile Navigation
+                 Hidden by default
+            ================================ -->
+    
+            <div class="mobile-menu ">
 
                 <form class="search-bar">
 
+                    <!-- Job Title -->
                     <div class="input-group">
 
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass "></i>
 
                         <input
                             type="text"
-                            placeholder="Search jobs..."
+                            placeholder="Search for jobs, companies..."
                         >
 
                     </div>
 
                 </form>
-
+    
                 <ul>
-
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="joblisting.html">Jobs</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="coming-soon">Applications</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="coming-soon">Messages</a>
-                    </li>
-
+                    
+                    <!--class="secondary-btn"-->
+                    <li><a href="index.html">Dashboard</a></li>
+    
+                    <li><a href="index.html" >Home</a></li>
+    
+                    <li><a href="joblisting.html" class="coming-soon">Jobs</a></li>
+    
+                    <li><a href="#" class="coming-soon">About</a></li>
+    
                 </ul>
-
+    
+                <div class="auth-links">
+    
+                    <button href="#" class="coming-soon primary-btn">Log out</button>
+                    <button class="coming-soon primary-btn">Post a Job</button>
+        
+                </div>
+    
             </div>
-
         </div>
+        
 
     </header>
 
-    <!-- ======================================
-                    MAIN
-    ======================================= -->
-
     <main>
 
-        <section class="search-jobs">
+    <!-- ==================================
+            Search Jobs Section
+    =================================== -->
+
+   <section class="search-jobs">
 
             <!-- Breadcrumb -->
 
@@ -173,9 +158,7 @@
                     Home
                 </a>
 
-                <span class="material-symbols-outlined">
-                    chevron_right
-                </span>
+                <span>/</span>
 
                 <span>
                     Browse Jobs
@@ -206,7 +189,7 @@
                     <span>
                         Showing <strong>24</strong> Jobs
                     </span>
-
+                    <div class="vertical-divider"></div>
                     <button>
 
                         <i class="fa-solid fa-arrow-down-wide-short"></i>
@@ -416,7 +399,7 @@
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
 
-                    <button class="page-btn active">
+                    <button class="page-btn primary-btn">
                         1
                     </button>
 
@@ -440,61 +423,42 @@
 
                 </div>
 
-            </section>
+                </section>
 
             </div>
 
         </section>
 
 </main>
+    
 
-<!-- ======================================
-                FOOTER
-====================================== -->
-
+<!-- ==================================================
+     Footer
+=================================================== -->
 <footer class="site-footer">
 
     <div class="footer-container">
 
-        <!-- Left -->
-
         <p>
-
             <i class="fa-solid fa-briefcase"></i>
-
             © 2026 JobPlatform. All rights reserved.
-
         </p>
-
-        <!-- Right -->
 
         <div class="footer-links">
 
-            <a
-                href="#"
-                class="coming-soon"
-            >
+            <a href="#" class="coming-soon">
                 Privacy Policy
             </a>
 
-            <a
-                href="#"
-                class="coming-soon"
-            >
+            <a href="#" class="coming-soon">
                 Terms of Service
             </a>
 
-            <a
-                href="#"
-                class="coming-soon"
-            >
+            <a href="#" class="coming-soon">
                 Help Center
             </a>
 
-            <a
-                href="#"
-                class="coming-soon"
-            >
+            <a href="#" class="coming-soon">
                 Contact
             </a>
 
@@ -504,25 +468,9 @@
 
 </footer>
 
-<!-- ======================================
-                JavaScript
-====================================== -->
+    <script type="module" src="./js/joblisting.js"> </script>
 
-<script
-    type="module"
-    src="./js/jobs.js"
-></script>
-
-<script
-    type="module"
-    src="./js/joblisting.js"
-></script>
-
-<script
-    type="module"
-    src="./js/index.js"
-></script>
-
+    <script type="module" src="./js/jobs.js"></script>
+    
 </body>
-
 </html>

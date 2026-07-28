@@ -71,7 +71,7 @@
 
 // });
 
- function mobileToggle(burgerClassName, mobileMenuClassName, stateName) {
+ export function mobileToggle(burgerClassName, mobileMenuClassName, stateName) {
 
     const burger = document.querySelector(`.${burgerClassName}`);
 
@@ -83,6 +83,7 @@
     mobileMenu.classList.toggle(`${stateName}`);
 
     burger.classList.toggle(`${stateName}`)
+
 
     });
 
@@ -102,9 +103,10 @@
     });
 }
 
-export{mobileToggle}
+mobileToggle("burger", "mobile-menu", "open" );
 
-mobileToggle("burger", "mobile-menu", "open" )
+
+
 
 
 const myForm = document.querySelector("form.newsletter-form");

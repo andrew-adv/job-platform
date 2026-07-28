@@ -198,7 +198,7 @@ ul a:nth-child(2) {
 
     width:60dvw;
 
-    background:#ddd;
+    background:#fff;
 
     border-radius:.5rem 0 0 .5rem;
 
@@ -219,6 +219,12 @@ ul a:nth-child(2) {
 
     padding:1rem;
 
+}
+
+.mobile-menu a {
+    display: inline-flex;
+    
+    width: 100%;
 }
 
 .mobile-menu .auth-links{
