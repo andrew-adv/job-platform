@@ -187,7 +187,7 @@ Includes:
 
 ## Application Page
 
-![Application Page](./assets/site-screenshot/applicationPage.png)
+![Application Page](./assets/site-screenshot/aplicationPage.png)
 
 ---
 
