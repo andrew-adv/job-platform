@@ -38,10 +38,13 @@
     burger.addEventListener("click", () => {
     // If "open" exists -> remove it.
     // If it doesn't exist -> add it.
-    mobileMenu.classList.toggle(`${stateName}`);
+    if (window.innerWidth > 750) {
+        return
+    } else {
+        mobileMenu.classList.toggle(`${stateName}`);
 
-    burger.classList.toggle(`${stateName}`)
-
+        burger.classList.toggle(`${stateName}`)
+    }
 
     });
 

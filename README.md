@@ -167,9 +167,36 @@ Includes:
 
 # Screenshots
 
-Coming soon.
+## Home Page
+
+![Home Page](./assets/site-screenshot/homePage2.png)
 
 ---
+
+## Job Listing
+
+![Job Listing](./assets/site-screenshot/joblistingPage.png)
+
+---
+
+## Job Details
+
+![Job Details](./assets/site-screenshot/jobdetails01.png)
+
+---
+
+## Application Page
+
+![Application Page](./assets/site-screenshot/applicationPage.png)
+
+---
+
+## Success Page
+
+![Success Page](./assets/site-screenshot/successPage.png)
+---
+
+
 
 # Project Structure
 
