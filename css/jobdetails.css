@@ -226,6 +226,10 @@ var(--color-border)
 
 }
 
+.job-actions a{
+    text-decoration: none;
+}
+
 .primary-btn:hover{
 
     opacity:.9;
@@ -240,6 +244,8 @@ var(--color-border)
 
     border:1px solid #dbe3ee;
 
+    color: #1152d4;
+
     border-radius:.5rem;
 
     background:#fff;
@@ -250,6 +256,12 @@ var(--color-border)
 
     transition:.2s;
 
+}
+
+.job-actions button{
+    display: flex;
+
+    align-items: center;
 }
 
 .secondary-btn:hover{

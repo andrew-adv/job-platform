@@ -439,6 +439,72 @@ ul a:nth-child(2) {
 
 }
 
+/*
+==================================================
+Popular Searches
+==================================================
+*/
+
+.popular-searches{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:.75rem;
+
+    margin-top:2rem;
+
+}
+
+.popular-searches span{
+
+    font-weight:600;
+
+    color:#64748b;
+
+}
+
+/*
+==================================================
+Popular Tag
+==================================================
+*/
+
+.popular-tag{
+
+    text-decoration:none;
+
+    color:#1152d4;
+
+    background:#eff6ff;
+
+    border:1px solid #bfdbfe;
+
+    border-radius:999px;
+
+    padding:.45rem 1rem;
+
+    font-size:.9rem;
+
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.popular-tag:hover{
+
+    background:#1152d4;
+
+    color:#fff;
+
+}
+
 
 /* =====================================
    Responsive
@@ -486,8 +552,188 @@ ul a:nth-child(2) {
 
 
 
+@media(width <= 768px){
+
+.popular-searches{
+
+    justify-content:flex-start;
+
+}
+
+}
+
+@media(width <= 500px){
+
+.popular-searches{
+
+    gap:.5rem;
+
+}
+
+.popular-searches span{
+
+    width:100%;
+
+}
+
+.popular-tag{
+
+    font-size:1rem;
+
+    padding:.4rem .8rem;
+
+}
+
+}
 
 
+/*
+======================================
+Categories
+======================================
+*/
+
+.categories{
+
+    padding:5rem 3.5rem;
+
+    background:#f8fafc;
+}
+
+.categories .container{
+
+    max-width:1300px;
+
+    margin:auto;
+}
+
+.categories-header{
+
+    margin-bottom:3rem;
+}
+
+.categories-header h2{
+
+    font-size:2rem;
+
+    margin-bottom:.75rem;
+}
+
+.categories-header p{
+
+    color:#64748b;
+
+    max-width:650px;
+
+    line-height:1.7;
+}
+
+/*
+======================================
+Grid
+======================================
+*/
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:1.5rem;
+}
+
+/*
+======================================
+Card
+======================================
+*/
+
+.category-card{
+
+    margin-top: 1rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:1rem;
+
+    text-decoration:none;
+
+    color:#111827;
+
+    background:#fff;
+
+    padding:2rem;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:1rem;
+
+    transition:.25s;
+}
+
+.category-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#2563eb;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.category-card i{
+
+    width:4rem;
+
+    height:4rem;
+
+    display:grid;
+
+    place-items:center;
+
+    font-size:1.4rem;
+
+    color:#2563eb;
+
+    background:#eff6ff;
+
+    border-radius:.9rem;
+}
+
+.category-card h3{
+
+    font-size:1.15rem;
+}
+
+.category-card p{
+
+    color:#64748b;
+}
+
+.category-card span{
+
+    margin-top:auto;
+
+    color:#2563eb;
+
+    font-weight:600;
+}
+
+@media (width <= 1150px) {
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (width <= 750px) {
+    .category-grid {
+        grid-template-columns: auto;
+    }
+}
 
 
 
@@ -692,6 +938,12 @@ ul a:nth-child(2) {
     font-size: .8rem;
     font-weight: 700;
 
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
     border: none;
     border-radius: .4rem;
 
@@ -712,10 +964,59 @@ ul a:nth-child(2) {
     }
 
 
-.view-details-btn:visited  {
-    opacity: .1;
+.jobs-container .view-details-btn:visited  {
+    opacity: 0;
+
+} /*  ********
+
+
+
+/*
+=====================================
+View All Button
+=====================================
+*/
+
+.view-all-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:3rem;
 }
 
+.view-all-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    padding:.9rem 2rem;
+
+    background:#2031c8;
+
+    color:#fff;
+
+    font-weight:700;
+
+    border-radius:.5rem;
+
+    transition:
+        background-color .25s ease,
+        transform .25s ease;
+}
+
+.view-all-btn:hover{
+
+    background:#17249b;
+
+    transform:translateY(-2px);
+}
 /* =====================================
    Responsive
 ===================================== */

@@ -1,135 +1,179 @@
 # Job Platform
 
-A modern, responsive job platform interface built with semantic HTML, CSS, and vanilla JavaScript.
+A modern, responsive job platform built with semantic HTML, CSS, and vanilla JavaScript.
 
-The project simulates a real-world job marketplace where users can browse opportunities, search for companies, and manage job applications. It is being developed incrementally, with each milestone focusing on building production-quality frontend features before expanding into a full-stack application.
-
----
-
-## Overview
-
-Job Platform is a frontend-first project focused on building a clean, responsive, and scalable user experience for a modern job marketplace.
-
-The application begins as a static website and will progressively evolve into a fully interactive platform with authentication, dashboards, job management, and backend integration.
-
-The project focuses on responsive layouts, reusable components, and progressively enhanced JavaScript functionality before introducing backend technologies.
-
-This project serves as a foundation for future features such as authentication, job applications, saved jobs, search, filtering, and user dashboards.
+The project simulates a real-world recruitment platform where users can browse job opportunities, search and filter listings, view detailed job information, and complete an application flow. It is being developed incrementally with a frontend-first approach, focusing on clean architecture, responsive design, and production-style JavaScript before expanding into a full-stack application.
 
 ---
 
----
+# Overview
 
-## Features
+Job Platform is a frontend-focused web application designed to replicate the core experience of modern recruitment platforms.
 
-##### 🚧 Current Progress
+Rather than building isolated pages, the project emphasizes how pages communicate with one another through routing, query parameters, shared data, and reusable JavaScript modules.
 
-The project has moved beyond a simple landing page and is now a multi-page frontend application.
-
-### ✅ Completed Pages
-
-- Home Page
-- Browse Jobs
-- Job Details
-- Apply for Job
-- Application Success
-- Login / Register
-- Dashboard
-- Under Construction
+Current development focuses on building a realistic frontend application before introducing backend technologies such as authentication, APIs, and databases.
 
 ---
 
-## ✨ Implemented Features
+# Current Status
 
-### Home
+## 🚧 Development Stage
 
-- Hero Section
-- Search Bar
-- Featured Jobs
+**Phase:** Frontend Application Logic
 
-- CTA Section
-- Footer
-- Newsletter Form
+The project has progressed beyond UI development and now focuses on implementing real application behaviour.
 
-### Jobs
+Completed pages:
 
-- Dynamic job cards
+- ✅ Home
+- ✅ Job Listing
+- ✅ Job Details
+- ✅ Job Application
+- ✅ Application Success
+- ✅ Login / Register
+- ✅ Dashboard (UI)
+- ✅ Under Construction
+
+Current focus:
+
+- Frontend functionality
+- Search & filtering
+- Page communication
+- Application flow
+- Codebase refactoring
+
+---
+
+# Implemented Features
+
+## Home
+
+- Responsive hero section
+- Job search
+- Popular search tags
+- Featured jobs carousel
+- Category navigation
+- Call-to-action section
+- Newsletter form
+- Responsive footer
+
+---
+
+## Job Listings
+
+- Dynamic job rendering
+- Search via URL parameters
 - Pagination
-- Job search layout
-- Filters UI
-
-### Forms
-
-- Newsletter validation
-- Application form
-- Resume upload UI
-
-### Authentication
-
-- Login/Register UI
-- Responsive authentication layout
-
-### Dashboard
-
-- Statistics cards
-- Saved jobs section
-- Applications section
-- Profile overview
-
-### General
-
-- Responsive layouts
-- Mobile navigation
-- Shared styling
-- Under Construction page for unfinished routes
-
-
-### Planned
-
-- Categories
-- Companies
-- Testimonials
-- Login & Registration
-- Local Storage authentication
-- Saved Jobs
-- Search & Filters
-- Company Profiles
-- User Dashboard
-- Accessibility enhancements
-- Job listings
-- Responsive mobile navigation
-- Application tracking
-- Responsive improvements
-- Dark mode 
+- Responsive layout
+- Job cards
+- Navigation from Home
 
 ---
 
-## Tech Stack
+## Job Details
 
-### Frontend
+- Dynamic job information
+- Job overview
+- Skills
+- Responsibilities
+- Requirements
+- Apply button
+
+---
+
+## Job Application
+
+- Dynamic breadcrumb
+- Dynamic job summary
+- Application form
+- Navigation guards
+- Success page integration
+
+---
+
+## Authentication
+
+- Login UI
+- Register UI
+- Responsive authentication pages
+
+---
+
+## Dashboard
+
+Frontend UI completed.
+
+Includes:
+
+- Overview cards
+- Applications
+- Saved jobs
+- Profile section
+
+(Application logic planned.)
+
+---
+
+## Shared Features
+
+- Responsive navigation
+- Mobile menu
+- Outside click detection
+- Escape key support
+- Close-on-link navigation
+- Shared job dataset
+- URL query parameter routing
+- Modular JavaScript structure
+
+---
+
+# Planned Features
+
+## Next Milestone
+
+- CSS variables system
+- CSS architecture refactor
+- Header component
+- Footer component
+- Authentication state
+- Dashboard visibility
+
+## Future Features
+
+- Local Storage authentication
+- Saved jobs
+- Advanced filtering
+- Company profiles
+- Employer dashboard
+- Candidate dashboard
+- Job posting
+- Backend API
+- Database integration
+- Accessibility improvements
+- Dark mode
+
+---
+
+# Tech Stack
+
+## Frontend
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- JavaScript (ES6 Modules)
 
-<!-- ### Future
+---
 
-- React
-- Node.js
-- Express
-- MongoDB (or PostgreSQL)
-
---- -->
-
-## Screenshots
+# Screenshots
 
 Coming soon.
 
 ---
 
-## Project Structure
+# Project Structure
 
-```
+```text
 job-platform/
 
 │
@@ -140,23 +184,29 @@ job-platform/
 │   ├── application.css
 │   ├── dashboard.css
 │   ├── login.css
-│   ├── construction.css
+│   └── construction.css
 │
 ├── js/
 │   ├── index.js
 │   ├── jobs.js
 │   ├── joblisting.js
-│   
-├── data/
+│   ├── jobdetails.js
+│   ├── application.js
+│   ├── login.js
+│   └── utils.js
 │
-├── images/
+├── data/
+├── assets/
+│   ├── images/
+│   └── icons/
 │
 ├── index.html
 ├── joblisting.html
 ├── jobdetails.html
 ├── application.html
-├── dashboard.html
+├── success.html
 ├── login.html
+├── dashboard.html
 ├── construction.html
 │
 └── README.md
@@ -164,66 +214,72 @@ job-platform/
 
 ---
 
-## Roadmap
+# Roadmap
 
-### Phase 1 —  Foundation
+## Phase 1 — User Interface ✅
 
-- [x] Navigation layout
-- [x] Mobile navigation
-- [x] Hero section
-- [x] Featured jobs
-- [ ] About section
-- [x] Footer
-- [x] Responsive layout
+- [x] Responsive layouts
+- [x] Multi-page navigation
+- [x] Landing page
+- [x] Job listing page
+- [x] Job details page
+- [x] Application page
+- [x] Authentication pages
+- [x] Dashboard UI
 
-### Phase 2 —  Interactivity
+---
 
-- [x] Mobile responsiveness
-- [x] Form validation
-- [ ] Theme toggle
-- [ ] Interactive UI components
+## Phase 2 — Frontend Logic 🚧
 
-### Phase 3 — Application Features
+- [x] Dynamic job rendering
+- [x] URL parameter routing
+- [x] Search redirect
+- [x] Dynamic job details
+- [x] Dynamic application page
+- [x] Featured jobs carousel
+- [ ] Search filtering
+- [ ] Advanced filters
+- [ ] Bookmark system
 
-- [x] Job listings
-- [ ] Company profiles
-- [ ] Search functionality
+---
+
+## Phase 3 — Refactoring
+
+- [ ] CSS variables
+- [ ] CSS architecture
+- [ ] Header component
+- [ ] Footer component
+- [ ] Shared utilities
+- [ ] Project cleanup
+
+---
+
+## Phase 4 — Authentication
+
+- [ ] Local Storage authentication
+- [ ] Protected routes
+- [ ] Dashboard access
+- [ ] Logout
 - [ ] Saved jobs
-- [ ] User dashboard
 
-### Phase 4 — Full Stack
+---
 
-- [ ] Authentication
-- [ ] Backend API
-- [ ] Database integration
-- [ ] Job applications
+## Phase 5 — Backend
+
+- [ ] REST API
+- [ ] Database
+- [ ] Real authentication
+- [ ] Job management
 - [ ] Deployment
 
 ---
 
-<!-- ## Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/<your-username>/job-platform.git
-```
-
-Navigate into the project
-
-```bash
-cd job-platform
-```
-
-Open `index.html` in your browser, or use a local development server such as the VS Code Live Server extension.
-
---- -->
-
-## License
+# License
 
 This project is licensed under the MIT License.
 
 ---
 
-## Author
-- # Andrew 
+# Author
+
+**Andrew Adeniyi**

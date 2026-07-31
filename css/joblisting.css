@@ -1,24 +1,4 @@
-    :root {
 
-        /* font size */
-
-        --size-base: 16px;
-
-        /* --size-xm: 4px;
-        --size-sm: 8px;
-        --size-md: 12px;
-        --size-lg: 20px;
-        -- */
-    }
-
-    html {
-        font-size: var(--size-base);
-    }
-
-    body.joblisting {
-        background: #f6f6f8;
-        font-family:  Arial, sans-serif;
-    }
 
     body.logged-in .logged-in {
         display: block;
@@ -62,7 +42,7 @@
         align-items: center;
         gap: 1rem;
 
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      
         font-size: 1rem;
         font-weight: 700;
     }
@@ -159,7 +139,6 @@
     }
 
     body.joblisting nav a{
-        font-family: inter;
         font-weight: 600;
         color: #344155;
     }
