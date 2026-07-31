@@ -986,3 +986,278 @@ body.dashboard main{
 }
 
 }
+
+
+
+/* =====================================
+   <= 1200px
+===================================== */
+
+@media (max-width:1200px){
+
+    body.dashboard > aside{
+        width:260px;
+    }
+
+    body.dashboard main{
+        margin-left:260px;
+    }
+
+    .main-header{
+        width:calc(100% - 260px);
+    }
+
+    .dashboard-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .content-section{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        order:-1;
+    }
+
+}
+
+
+/* =====================================
+   <= 900px
+===================================== */
+
+@media (max-width:900px){
+
+    body.dashboard > aside{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+        border-bottom:1px solid #e5e7eb;
+    }
+
+    body.dashboard main{
+        margin-left:0;
+    }
+
+    .main-header{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:1rem;
+
+        padding:1rem;
+    }
+
+    .header-right{
+
+        width:100%;
+
+        justify-content:space-between;
+    }
+
+    .search-bar{
+        width:100%;
+    }
+
+    .main-nav{
+        gap:1rem;
+        margin-right:0;
+    }
+
+    .dashboard-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/* =====================================
+   <= 768px
+===================================== */
+
+@media (max-width:768px){
+
+    .dashboard .main-content{
+
+        padding:1rem;
+
+        padding-top:2rem;
+
+    }
+
+    .dashboard-hero h1{
+        font-size:1.8rem;
+    }
+
+    .dashboard-tabs{
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+        scrollbar-width:none;
+
+    }
+
+    .dashboard-tabs::-webkit-scrollbar{
+        display:none;
+    }
+
+    .content-section{
+        margin-top:2rem;
+    }
+
+    .job-card{
+
+        flex-direction:column;
+
+    }
+
+    .job-top{
+
+        flex-direction:column;
+
+        gap:1rem;
+
+    }
+
+    .job-bottom{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:1rem;
+
+    }
+
+    .company-logo{
+
+        width:60px;
+
+        height:60px;
+
+    }
+
+}
+
+
+/* =====================================
+   <= 600px
+===================================== */
+
+@media (max-width:600px){
+
+    .dashboard-cards{
+        grid-template-columns:1fr;
+    }
+
+    .header-right{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:1rem;
+
+    }
+
+    .main-nav{
+
+        flex-wrap:wrap;
+
+    }
+
+    .header-actions{
+
+        width:100%;
+
+        justify-content:space-between;
+
+        border-left:none;
+
+        padding-left:0;
+
+    }
+
+    .section-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:.5rem;
+
+    }
+
+    .job-tags{
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+/* =====================================
+   <= 480px
+===================================== */
+
+@media (max-width:480px){
+
+    aside .user-profile{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+    aside nav a{
+
+        font-size:.9rem;
+
+        padding:.75rem;
+
+    }
+
+    .dashboard-hero h1{
+        font-size:1.5rem;
+    }
+
+    .dashboard-hero p{
+        font-size:.9rem;
+    }
+
+    .card-number{
+        font-size:2rem;
+    }
+
+    .floating-action-btn{
+
+        width:48px;
+
+        height:48px;
+
+        right:16px;
+
+        bottom:16px;
+
+    }
+
+}

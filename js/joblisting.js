@@ -121,7 +121,7 @@ function renderJobs(){
 
    const jobsToShow = filteredJobs.slice(
         currentIndex,
-        currentIndex + jobsPerPage
+        jobs.length - 1
     );
     if (jobsToShow.length === 0) {
 
@@ -154,3 +154,7 @@ function renderJobs(){
 }
 
 renderJobs()
+
+
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
