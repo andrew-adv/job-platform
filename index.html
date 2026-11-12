@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -7,12 +8,12 @@
 
     <title>Job Platform</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
-    >
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
 
 
 
@@ -29,9 +30,9 @@
 
 <body>
 
-    
+
     <header class="main-header">
-    
+
         <nav>
 
             <a href="index.html" class="logo">
@@ -44,7 +45,7 @@
             <ul class="nav-links">
 
                 <li>
-                    <a href="index.html" >Home</a>
+                    <a href="index.html">Home</a>
                 </li>
 
                 <li>
@@ -89,7 +90,7 @@
 
             <ul>
 
-                <li><a href="index.html" >Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
                 <li><a href="joblisting.html">Jobs</a></li>
 
@@ -109,78 +110,63 @@
 
     </header>
 
-   
-<main>
 
-   
-    <section class="hero">
-
-        <div class="container">
-
-  
-            <h1>
-                Find Your Next
-                <span>Opportunity</span>
-            </h1>
+    <main>
 
 
-            <p>
-                Search thousands of job openings from top companies.
-            </p>
+        <section class="hero">
+
+            <div class="container">
 
 
-            <!-- =====================================
+                <h1>
+                    Find Your Next
+                    <span>Opportunity</span>
+                </h1>
+
+
+                <p>
+                    Search thousands of job openings from top companies.
+                </p>
+
+
+                <!-- =====================================
                  Search Form
             ====================================== -->
 
-            <form 
-                id="hero-search-form"
-                class="search-bar"
-                >
+                <form id="hero-search-form" class="search-bar">
 
 
-                <div class="input-group border-right">
+                    <div class="input-group border-right">
 
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
 
-                    <input
-                        id="job-search"
-                        type="text"
-                        placeholder="Job title or keyword"
-                    >
+                        <input id="job-search" type="text" placeholder="Job title or keyword">
 
-                </div>
+                    </div>
 
 
 
-                <div class="input-group">
+                    <div class="input-group">
 
-                    <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-solid fa-location-dot"></i>
 
-                    <input
-                        id="location-search"
-                        type="text"
-                        placeholder="Location or Remote"
-                    >
+                        <input id="location-search" type="text" placeholder="Location or Remote">
 
-                </div>
+                    </div>
 
 
 
-                <button 
-                    id="search-btn"
-                    class="search-btn" 
-                    type="submit"
-                    >
+                    <button id="search-btn" class="search-btn" type="submit">
 
-                    Search Jobs
+                        Search Jobs
 
-                </button>
+                    </button>
 
-            </form>
+                </form>
 
 
-            <!-- =====================================
+                <!-- =====================================
             Popular Searches
 
             Quick shortcuts that fill the
@@ -192,418 +178,386 @@
             - Redirect with query string
         ====================================== -->
 
-            <div class="popular-searches">
+                <div class="popular-searches">
 
-                <span>Popular:</span>
+                    <span>Popular:</span>
 
-                <a
-                    href="#"
-                    class="popular-tag"
-                    data-category="Frontend"
-                >
-                    Frontend
+                    <a href="#" class="popular-tag" data-category="Frontend">
+                        Frontend
+                    </a>
+
+                    <a href="#" class="popular-tag" data-category="Backend">
+                        Backend
+                    </a>
+
+                    <a href="#" class="popular-tag" data-category="UI / UX">
+                        UI / UX
+                    </a>
+
+                    <a href="#" class="popular-tag" data-category="Remote">
+                        Remote
+                    </a>
+
+                    <a href="#" class="popular-tag" data-category="React">
+                        React
+                    </a>
+
+                </div>
+                <!-- Hero statistics (coming later) -->
+            </div>
+
+        </section>
+
+
+        <section class="categories">
+
+            <h2>Browse by Category</h2>
+
+            <div class="category-grid">
+
+                <a href="#" class="category-card" data-category="Software Engineering">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Software Engineering</h3>
+                    <p>420 Jobs</p>
                 </a>
 
-                <a
-                    href="#"
-                    class="popular-tag"
-                    data-category="Backend"
-                >
-                    Backend
+                <a href="#" class="category-card" data-category="Design">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>Design</h3>
+                    <p>180 Jobs</p>
                 </a>
 
-                <a
-                    href="#"
-                    class="popular-tag"
-                    data-category="UI / UX"
-                >
-                    UI / UX
+                <a href="#" class="category-card" data-category="Marketing">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Marketing</h3>
+                    <p>92 Jobs</p>
                 </a>
 
-                <a
-                    href="#"
-                    class="popular-tag"
-                    data-category="Remote"
-                >
-                    Remote
-                </a>
-
-                <a
-                    href="#"
-                    class="popular-tag"
-                    data-category="React"
-                >
-                    React
+                <a href="#" class="category-card" data-category="Product Management">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h3>Product Management</h3>
+                    <p>61 Jobs</p>
                 </a>
 
             </div>
-                        <!-- Hero statistics (coming later) -->
-        </div>
 
-    </section>
+        </section>
 
 
-    <section class="categories">
-
-    <h2>Browse by Category</h2>
-
-    <div class="category-grid">
-
-        <a href="#" class="category-card" data-category="Software Engineering">
-            <i class="fa-solid fa-code"></i>
-            <h3>Software Engineering</h3>
-            <p>420 Jobs</p>
-        </a>
-
-        <a href="#" class="category-card" data-category="Design">
-            <i class="fa-solid fa-palette"></i>
-            <h3>Design</h3>
-            <p>180 Jobs</p>
-        </a>
-
-        <a href="#" class="category-card" data-category="Marketing">
-            <i class="fa-solid fa-chart-line"></i>
-            <h3>Marketing</h3>
-            <p>92 Jobs</p>
-        </a>
-
-        <a href="#" class="category-card" data-category="Product Management">
-            <i class="fa-solid fa-briefcase"></i>
-            <h3>Product Management</h3>
-            <p>61 Jobs</p>
-        </a>
-
-    </div>
-
-</section>
 
 
-   
+        <section id="featuredJobs" class="featured-jobs">
 
-<section class="featured-jobs">
+            <header class="section-header">
 
-    <header class="section-header">
+                <div>
 
-        <div>
+                    <h2>Featured Jobs</h2>
 
-            <h2>Featured Jobs</h2>
+                    <p>Explore opportunities from top companies.</p>
 
-            <p>Explore opportunities from top companies.</p>
+                </div>
 
-        </div>
+                <div class="featured-controls">
 
-        <div class="featured-controls">
+                    <button class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
 
-            <button class="prev-btn">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
+                    <button class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
 
-            <button class="next-btn">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
 
-            
-        </div>
-        
-    </header>
-    
-    <div class="jobs-container"></div>
-    
-    <div class="view-all-container">
+                </div>
 
-        <a
-            href="joblisting.html"
-            class="view-all-btn"
-        >
-            Browse All Jobs  →
-        </a>
+            </header>
 
-    </div>
-</section>
+            <div class="jobs-container"></div>
 
-   
+            <div class="view-all-container">
 
-    <section class="cta">
+                <a href="joblisting.html" class="view-all-btn">
+                    Browse All Jobs →
+                </a>
 
-        <div class="container">
+            </div>
+        </section>
 
-            <!-- CTA Card -->
-            <div class="cta-card">
 
-                <!-- ==========================
+
+        <section class="cta">
+
+            <div class="container">
+
+                <!-- CTA Card -->
+                <div class="cta-card">
+
+                    <!-- ==========================
                     CTA Content
                 =========================== -->
 
-                <div class="cta-content">
+                    <div class="cta-content">
 
-                    <h2>
-                        Are you hiring the best talent?
-                    </h2>
+                        <h2>
+                            Are you hiring the best talent?
+                        </h2>
 
-                    <p>
-                        Join over 10,000+ companies worldwide and post your job openings on the #1 professional platform.
-                    </p>
+                        <p>
+                            Join over 10,000+ companies worldwide and post your job openings on the #1 professional
+                            platform.
+                        </p>
 
-                    <!-- CTA Buttons -->
-                    <div class="cta-buttons">
+                        <!-- CTA Buttons -->
+                        <div class="cta-buttons">
 
-                        <button class="primary-btn post-job-btn">
+                            <button class="primary-btn post-job-btn">
 
-                            Post a Job Now
-                            <span class="material-symbols-outlined">launch</span>
-                        </button>
+                                Post a Job Now
+                                <span class="material-symbols-outlined">launch</span>
+                            </button>
 
-                        <button class="secondary-btn coming-soon">
+                            <button class="secondary-btn coming-soon">
 
-                            Learn More
+                                Learn More
 
-                        </button>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================
+                    Statistics
+                =========================== -->
+
+                    <div class="cta-stats">
+
+                        <!-- Stat Card -->
+                        <article class="stat-card">
+
+                            <span class="stat-number">10M+</span>
+
+                            <span class="stat-title">
+                                Job Seekers
+                            </span>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <span class="stat-number">500K+</span>
+
+                            <span class="stat-title">
+                                Daily Applications
+                            </span>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <span class="stat-number">98%</span>
+
+                            <span class="stat-title">
+                                Hire Rate
+                            </span>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <span class="stat-number">150+</span>
+
+                            <span class="stat-title">
+                                Countries
+                            </span>
+
+                        </article>
 
                     </div>
 
                 </div>
 
-
-                <!-- ==========================
-                    Statistics
-                =========================== -->
-
-                <div class="cta-stats">
-
-                    <!-- Stat Card -->
-                    <article class="stat-card">
-
-                        <span class="stat-number">10M+</span>
-
-                        <span class="stat-title">
-                            Job Seekers
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-number">500K+</span>
-
-                        <span class="stat-title">
-                            Daily Applications
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-number">98%</span>
-
-                        <span class="stat-title">
-                            Hire Rate
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-number">150+</span>
-
-                        <span class="stat-title">
-                            Countries
-                        </span>
-
-                    </article>
-
-                </div>
-
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-    <!-- =====================================
+        <!-- =====================================
      Footer
 ====================================== -->
 
 
-</main>
+    </main>
 
-<footer class="site-footer">
+    <footer class="site-footer">
 
-    <div class="container">
+        <div class="container">
 
-        <!-- ==========================
+            <!-- ==========================
              Footer Top
         =========================== -->
 
-        <div class="footer-content">
+            <div class="footer-content">
 
-            <!-- ==========================
+                <!-- ==========================
                  Brand
             =========================== -->
 
-            <section class="footer-brand">
+                <section class="footer-brand">
 
-                <a href="index.html" class="logo">
+                    <a href="index.html" class="logo">
 
-                    <i class="fa-solid fa-briefcase"></i>
+                        <i class="fa-solid fa-briefcase"></i>
 
-                    <span>JobPlatform</span>
+                        <span>JobPlatform</span>
 
-                </a>
-
-                <p>
-                    Empowering careers globally through intelligent matching
-                    and world-class opportunities.
-                </p>
-
-                <!-- Social Links -->
-
-                <div class="social-links">
-
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
 
-                    <a href="#">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
+                    <p>
+                        Empowering careers globally through intelligent matching
+                        and world-class opportunities.
+                    </p>
 
-                    <a href="https://github.com/andrew-adv/job-platform" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
+                    <!-- Social Links -->
 
-                </div>
+                    <div class="social-links">
 
-            </section>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="https://github.com/andrew-adv/job-platform" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </section>
 
 
-            <!-- ==========================
+                <!-- ==========================
                  Candidate Links
             =========================== -->
 
-            <section class="footer-links">
+                <section class="footer-links">
 
-                <h4>For Candidates</h4>
+                    <h4>For Candidates</h4>
 
-                <ul>
+                    <ul>
 
-                    <li><a href="joblisting.html" class="coming-soon">Browse Jobs</a></li>
+                        <li><a href="joblisting.html" class="coming-soon">Browse Jobs</a></li>
 
-                    <li><a href="#" class="coming-soon">Career Advice</a></li>
+                        <li><a href="#" class="coming-soon">Career Advice</a></li>
 
-                    <li><a href="#" class="coming-soon">Job Alerts</a></li>
+                        <li><a href="#" class="coming-soon">Job Alerts</a></li>
 
-                    <li><a href="#" class="coming-soon requires-auth normal-dashboard">Candidate Dashboard</a></li>
+                        <li><a href="#" class="coming-soon requires-auth normal-dashboard">Candidate Dashboard</a></li>
 
-                </ul>
+                    </ul>
 
-            </section>
+                </section>
 
 
-            <!-- ==========================
+                <!-- ==========================
                  Employer Links
             =========================== -->
 
-            <section class="footer-links">
+                <section class="footer-links">
 
-                <h4>For Employers</h4>
+                    <h4>For Employers</h4>
 
-                <ul>
+                    <ul>
 
-                    <li><a href="#" class="coming-soon">Post a Job</a></li>
+                        <li><a href="#" class="coming-soon">Post a Job</a></li>
 
-                    <li><a href="#" class="coming-soon">Talent Search</a></li>
+                        <li><a href="#" class="coming-soon">Talent Search</a></li>
 
-                    <li><a href="#" class="coming-soon">Enterprise Solutions</a></li>
+                        <li><a href="#" class="coming-soon">Enterprise Solutions</a></li>
 
-                    <li><a href="#" class="coming-soon">Pricing Plans</a></li>
+                        <li><a href="#" class="coming-soon">Pricing Plans</a></li>
 
-                </ul>
+                    </ul>
 
-            </section>
+                </section>
 
 
-            <!-- ==========================
+                <!-- ==========================
                  Newsletter
             =========================== -->
 
-            <section class="footer-newsletter">
+                <section class="footer-newsletter">
 
-                <h4>Newsletter</h4>
+                    <h4>Newsletter</h4>
 
-                <p>
-                    Get the latest job updates directly in your inbox.
-                </p>
-
-
-                <form
-                    class="newsletter-form"
-                    action="https://formspree.io/f/xdaqwdkp"
-                    method="POST"
-                    onsubmit=""
-                >
-
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Your email"
-                        
-                        id="email"
-                    >
-
-                    <button type="submit">
-
-                        Join
-
-                    </button>
-
-                </form>
-                <p class="newsletter-message" aria-live="polite"></p>
-
-            </section>
-
-        </div>
+                    <p>
+                        Get the latest job updates directly in your inbox.
+                    </p>
 
 
-        <!-- ==========================
+                    <form class="newsletter-form" action="https://formspree.io/f/xdaqwdkp" method="POST" onsubmit="">
+
+                        <input type="email" name="email" placeholder="Your email" id="email">
+
+                        <button type="submit">
+
+                            Join
+
+                        </button>
+
+                    </form>
+                    <p class="newsletter-message" aria-live="polite"></p>
+
+                </section>
+
+            </div>
+
+
+            <!-- ==========================
              Footer Bottom
         =========================== -->
 
-        <div class="footer-bottom">
+            <div class="footer-bottom">
 
-            <p>
+                <p>
 
-                © 2026 JobPlatform. All rights reserved.
+                    © 2026 JobPlatform. All rights reserved.
 
-            </p>
+                </p>
 
-            <div class="footer-bottom-links">
+                <div class="footer-bottom-links">
 
-                <a href="#" class="coming-soon">
+                    <a href="#" class="coming-soon">
 
-                    Privacy Policy
+                        Privacy Policy
 
-                </a>
+                    </a>
 
-                <a href="#" class="coming-soon">
+                    <a href="#" class="coming-soon">
 
-                    Terms of Service
+                        Terms of Service
 
-                </a>
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
-
-</footer>
+    </footer>
 
 
-<script src="./js/index.js" type="module" defer></script>
+    <script src="./js/index.js" type="module" defer></script>
     <script src="./js/jobs.js" type="module"></script>
 
 </body>
+
 </html>
